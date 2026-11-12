@@ -1,4 +1,5 @@
 
+
 import logging
 
 from langchain_ollama import ChatOllama
@@ -10,15 +11,12 @@ from app.generation.prompt_builder import build_rag_prompt
 
 logger = logging.getLogger(__name__)
 
-
 DEFAULT_LLM_MODEL = settings.LLM_MODEL
 DEFAULT_OLLAMA_BASE_URL = settings.OLLAMA_BASE_URL
 
 
 class LLMGenerator:
-    """
-    Generate grounded answers using a local Ollama LLM.
-    """
+    """Generate grounded answers using a local Ollama LLM."""
 
     def __init__(
         self,
@@ -70,12 +68,7 @@ class LLMGenerator:
         query: str,
         context_chunks: list[dict],
     ) -> dict:
-        """
-        Generate an answer using reranked document chunks.
-
-        Returns:
-            A dictionary containing answer, sources, and model name.
-        """
+        """Generate an answer using reranked document chunks."""
 
         if not isinstance(query, str) or not query.strip():
             raise ValueError("Query must be a non-empty string.")
@@ -83,7 +76,6 @@ class LLMGenerator:
         if not isinstance(context_chunks, list):
             raise ValueError("Context chunks must be a list.")
 
-        # No context means no LLM call.
         if not context_chunks:
             return {
                 "answer": (
@@ -101,10 +93,7 @@ class LLMGenerator:
             )
 
             llm = self._load_model()
-
             response = llm.invoke(prompt)
-
-            
 
             answer = response.content
 

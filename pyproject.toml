@@ -21,7 +21,9 @@ dependencies = [
     "pypdf",
     "python-docx",
     "python-dotenv",
-    "mcp>=2.3,<3"
+    "mcp>=2.3,<3",
+    "langgraph>=1.2,<2"
+ 
 ]
 
 
