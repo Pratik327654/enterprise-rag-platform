@@ -1,0 +1,37 @@
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+
+# Testing
+.pytest_cache/
+
+# Vector Database
+chroma_db/
+
+# Data
+data/raw/*
+data/processed/*
+
+# Logs
+*.log
+
+# Python environment and cache
+.env.*
+!.env.example
+*.pyc
+.ruff_cache/
+
+# Model cache
+.cache/
+.cache/huggingface/
+
+# Build and package artifacts
+*.egg-info/
+build/
+dist/
