@@ -1,5 +1,7 @@
 
+
 import logging
+from time import perf_counter
 
 from app.ingestion.loader_registry import load_document
 from app.chunking.text_splitter import chunk_documents
@@ -8,15 +10,14 @@ from app.vectorstore.chroma_store import ChromaVectorStore
 from app.retrieval.retriever import DocumentRetriever
 from app.reranking.reranker import DocumentReranker
 from app.generation.generator import LLMGenerator
+from app.monitoring.metrics import PIPELINE_STAGE_DURATION
 
 
 logger = logging.getLogger(__name__)
 
 
 class RAGPipeline:
-    """
-    Orchestrate document ingestion and RAG question answering.
-    """
+    """Orchestrate document ingestion and RAG question answering."""
 
     def __init__(
         self,
@@ -26,7 +27,6 @@ class RAGPipeline:
         reranker=None,
         generator=None,
     ):
-        # Shared instances for ingestion and retrieval.
         self.embedding_generator = (
             embedding_generator or EmbeddingGenerator()
         )
@@ -39,24 +39,45 @@ class RAGPipeline:
         )
 
         self.reranker = reranker or DocumentReranker()
-
         self.generator = generator or LLMGenerator()
 
+    def _measure_stage(self, stage: str, operation):
+        """Measure one pipeline operation and record its duration."""
+
+        start_time = perf_counter()
+
+        try:
+            return operation()
+        finally:
+            duration = perf_counter() - start_time
+
+            PIPELINE_STAGE_DURATION.labels(
+                stage=stage
+            ).observe(duration)
+
+            logger.info(
+                "Pipeline stage '%s' completed in %.4f seconds.",
+                stage,
+                duration,
+            )
+
     def ingest_document(self, file_path: str) -> dict:
-        """
-        Load, chunk, embed and store a document.
-        """
+        """Load, chunk, embed and store a document."""
 
         if not isinstance(file_path, str) or not file_path.strip():
             raise ValueError("File path must be a non-empty string.")
 
-        logger.info("Starting document ingestion: %s", file_path)
+        logger.info("Starting document ingestion.")
 
-        # Step 1: Load document.
-        documents = load_document(file_path)
+        documents = self._measure_stage(
+            "document_loading",
+            lambda: load_document(file_path),
+        )
 
-        # Step 2: Generate document chunks.
-        chunks = chunk_documents(documents)
+        chunks = self._measure_stage(
+            "chunking",
+            lambda: chunk_documents(documents),
+        )
 
         if not chunks:
             return {
@@ -67,14 +88,14 @@ class RAGPipeline:
                 "status": "no_content",
             }
 
-        # Step 3: Generate embeddings.
-        embedded_chunks = (
-            self.embedding_generator.generate_embeddings(chunks)
+        embedded_chunks = self._measure_stage(
+            "embedding",
+            lambda: self.embedding_generator.generate_embeddings(chunks),
         )
 
-        # Step 4: Store embeddings in ChromaDB.
-        stored_count = self.vector_store.add_embeddings(
-            embedded_chunks
+        stored_count = self._measure_stage(
+            "vector_storage",
+            lambda: self.vector_store.add_embeddings(embedded_chunks),
         )
 
         result = {
@@ -99,33 +120,37 @@ class RAGPipeline:
         top_n: int = 3,
         where: dict | None = None,
     ) -> dict:
-        """
-        Retrieve, rerank and generate an answer for a user query.
-        """
+        """Retrieve, rerank and generate an answer."""
 
         if not isinstance(query, str) or not query.strip():
             raise ValueError("Query must be a non-empty string.")
 
         logger.info("Starting RAG query processing.")
 
-        # Step 1: Retrieve relevant chunks.
-        retrieved_chunks = self.retriever.retrieve(
-            query=query,
-            top_k=top_k,
-            where=where,
+        retrieved_chunks = self._measure_stage(
+            "retrieval",
+            lambda: self.retriever.retrieve(
+                query=query,
+                top_k=top_k,
+                where=where,
+            ),
         )
 
-        # Step 2: Rerank retrieved chunks.
-        reranked_chunks = self.reranker.rerank(
-            query=query,
-            retrieved_chunks=retrieved_chunks,
-            top_n=top_n,
+        reranked_chunks = self._measure_stage(
+            "reranking",
+            lambda: self.reranker.rerank(
+                query=query,
+                retrieved_chunks=retrieved_chunks,
+                top_n=top_n,
+            ),
         )
 
-        # Step 3: Generate grounded answer.
-        result = self.generator.generate(
-            query=query,
-            context_chunks=reranked_chunks,
+        result = self._measure_stage(
+            "generation",
+            lambda: self.generator.generate(
+                query=query,
+                context_chunks=reranked_chunks,
+            ),
         )
 
         logger.info("RAG query processing completed.")
