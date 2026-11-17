@@ -1322,3 +1322,327 @@ Potential future engineering milestones include:
 - Kubernetes deployment and GitOps using Argo CD.
 
 These items are planned future work and are not included in this completed milestone.
+
+
+# Observability & Monitoring
+
+## 1. Objective
+
+Integrate application-level monitoring and observability into the Enterprise RAG Platform using Prometheus and Grafana.
+
+The objective is to measure API performance, monitor RAG pipeline execution stages, track server errors, and visualize operational metrics through a centralized dashboard.
+
+## 2. Architecture
+
+**Monitoring Flow:**
+
+FastAPI Application → Prometheus Metrics Endpoint → Prometheus Server → Grafana Dashboard
+
+Components:
+
+- FastAPI middleware for HTTP request instrumentation.
+- Prometheus Client for application metric collection.
+- Prometheus Server for metric scraping and time-series storage.
+- Grafana for metric visualization.
+- Docker Compose for local monitoring infrastructure.
+
+## 3. Metrics Implemented
+
+| Metric | Type | Purpose |
+|---|---|---|
+| `rag_api_requests_total` | Counter | Total HTTP requests grouped by method, endpoint and status |
+| `rag_api_request_duration_seconds` | Histogram | HTTP request processing duration |
+| `rag_api_errors_total` | Counter | HTTP server errors (status 500 and above) |
+| `rag_pipeline_stage_duration_seconds` | Histogram | Individual RAG pipeline stage execution duration |
+
+### Pipeline stages monitored
+
+**Document ingestion**
+- document_loading
+- chunking
+- embedding
+- vector_storage
+
+**Query processing**
+- retrieval
+- reranking
+- generation
+
+## 4. Implementation
+
+### FastAPI Instrumentation
+
+Updated `app/api/main.py` with HTTP middleware using `perf_counter()`.
+
+The middleware records request count, response status, processing duration and server errors.
+
+Exposed the Prometheus metrics endpoint at `/metrics`.
+
+The metrics endpoint is excluded from the custom HTTP request instrumentation to avoid self-monitoring overhead.
+
+### RAG Pipeline Instrumentation
+
+Updated `app/pipeline/rag_pipeline.py` with a shared stage measurement helper.
+
+The helper records execution duration for document ingestion and query processing stages while reusing existing pipeline operations.
+
+Duration observations are recorded in a `finally` block to capture execution time even when an operation raises an exception.
+
+### Prometheus
+
+Added `monitoring/prometheus.yml`.
+
+Configured the `enterprise-rag-api` scrape job to collect metrics from the FastAPI service through `host.docker.internal:8000`.
+
+Prometheus target health was manually verified as `UP`.
+
+### Grafana
+
+Added a custom RAG dashboard and dashboard provisioning configuration.
+
+Dashboard panels:
+
+1. Total API Requests
+2. API Request Rate
+3. API 95th Percentile Latency
+4. RAG Pipeline Stage Duration
+5. API Server Errors
+
+Prometheus datasource connectivity was verified successfully. Dashboard queries were manually executed and saved.
+
+### Docker Compose
+
+Added `docker-compose.monitoring.yml` to run Prometheus and Grafana.
+
+Configuration includes:
+- Prometheus port 9090.
+- Grafana port 3000.
+- Persistent storage volumes.
+- Seven-day Prometheus retention.
+- 256 MB memory limit per service.
+- Automatic container restart policy.
+
+## 5. Files
+
+| File | Purpose |
+|---|---|
+| `app/monitoring/metrics.py` | Central Prometheus metric definitions |
+| `app/api/main.py` | HTTP request instrumentation and `/metrics` endpoint |
+| `app/pipeline/rag_pipeline.py` | RAG stage duration instrumentation |
+| `monitoring/prometheus.yml` | Prometheus scrape configuration |
+| `monitoring/grafana/rag-dashboard.json` | Grafana dashboard definition |
+| `monitoring/grafana/provisioning/dashboards/dashboard.yml` | Dashboard provisioning |
+| `docker-compose.monitoring.yml` | Prometheus and Grafana services |
+| `tests/unit/test_monitoring.py` | Monitoring endpoint and metric tests |
+| `tests/unit/test_api.py` | API test updates |
+| `pyproject.toml` | Prometheus client dependency |
+
+## 6. Testing and Verification
+
+- Full project test suite: **150 tests passed**.
+- Prometheus `/metrics` endpoint manually verified.
+- Prometheus scrape target verified as `UP`.
+- Prometheus metric queries returned data after API and RAG operations.
+- Grafana Prometheus datasource connection test succeeded.
+- Dashboard panels manually queried and saved.
+- Grafana container verified in running state with zero restart count at final status verification.
+
+## 7. Limitations and Follow-up Work
+
+1. Datasource provisioning through YAML was not reliably verified on a fresh Grafana deployment. The working local setup uses a manually configured datasource and persisted Grafana volume.
+2. The local datasource backup file is excluded from Git and is not part of the deployment configuration.
+3. Grafana credentials require environment-based configuration before production deployment.
+4. Pipeline stage duration metrics need additional independent unit-test coverage.
+5. HTTP error monitoring currently counts status codes of 500 and above; client-side 4xx errors are not included.
+6. Alerting rules, distributed tracing, and production monitoring security remain future improvements.
+
+## 8. Git Status
+
+- Branch: `feature/observability-monitoring`
+- Commit: `245fa16` — `feat: add Prometheus and Grafana monitoring`
+- Implementation commit pushed to the remote feature branch.
+- Main branch has not been merged or modified by this milestone.
+
+
+# Project Foundation — Enterprise RAG Platform
+
+## 1. Project Overview
+
+The Enterprise RAG Platform is a document intelligence application that enables users to upload documents and retrieve context-aware answers using Retrieval-Augmented Generation (RAG).
+
+The platform combines document ingestion, text chunking, embedding generation, vector storage, retrieval, reranking, and LLM-based response generation.
+
+It exposes its functionality through a FastAPI application and includes monitoring through Prometheus and Grafana.
+
+## 2. Technology Stack
+
+| Component | Technology |
+|---|---|
+| Backend API | FastAPI |
+| Language | Python |
+| LLM Runtime | Ollama |
+| LLM Model | llama3.2:1b |
+| Embeddings | Sentence Transformers |
+| Embedding Model | all-MiniLM-L6-v2 |
+| Vector Database | ChromaDB |
+| Reranking | CrossEncoder |
+| Workflow Orchestration | LangGraph |
+| Monitoring | Prometheus |
+| Visualization | Grafana |
+| Containerization | Docker |
+| Multi-container Management | Docker Compose |
+
+## 3. High-Level Architecture
+
+The platform consists of three primary runtime services:
+
+1. **API Service:** Handles document uploads and RAG queries.
+2. **Prometheus:** Collects application metrics.
+3. **Grafana:** Visualizes the collected metrics through dashboards.
+
+The API communicates with Ollama running on the host machine. ChromaDB and uploaded documents are persisted using mounted storage.
+
+## 4. RAG Workflow
+
+The document processing and question-answering pipeline includes:
+
+1. Document ingestion
+2. Text extraction and chunking
+3. Embedding generation
+4. Vector storage
+5. Relevant document retrieval
+6. Cross-encoder reranking
+7. Context validation
+8. LLM response generation
+
+The LangGraph workflow uses the following nodes:
+
+- `retrieve`
+- `rerank`
+- `check_context`
+- `generate`
+- `insufficient_context`
+
+The context validation step determines whether the workflow should generate an answer or return an insufficient-context response.
+
+## 5. Dockerization
+
+The application is containerized using a Dockerfile and Docker Compose.
+
+### Dockerfile
+
+The Dockerfile defines the application image, Python runtime, system dependencies, project installation, working directory, and API startup command.
+
+### .dockerignore
+
+The `.dockerignore` file excludes unnecessary local files and directories from the Docker build context, including local environments, Git metadata, environment files, local databases, and development artifacts.
+
+### Docker Compose Services
+
+| Service | Container | Port |
+|---|---|---:|
+| API | enterprise-rag-api | 8000 |
+| Prometheus | rag-prometheus | 9090 |
+| Grafana | rag-grafana | 3000 |
+
+### Service Connectivity
+
+The API connects to Ollama through:
+
+`http://host.docker.internal:11434`
+
+Prometheus scrapes the API using the Docker Compose service hostname:
+
+`api:8000`
+
+### Persistent Storage
+
+The deployment uses persistent mounts and named volumes for:
+
+- ChromaDB data
+- Uploaded documents
+- Hugging Face model cache
+- Prometheus time-series data
+- Grafana data
+
+This prevents important application and monitoring data from being tied only to the lifecycle of an individual container.
+
+## 6. Monitoring
+
+Prometheus collects API and RAG pipeline metrics.
+
+The monitoring setup includes:
+
+- API request counts
+- API request duration
+- API error metrics
+- RAG pipeline stage duration
+
+Grafana provides dashboards for monitoring request activity, latency, errors, and pipeline-stage performance.
+
+The pipeline-stage duration metric tracks the existing pipeline stages, including document loading, chunking, embedding, vector storage, retrieval, reranking, and generation.
+
+The current dashboard visualizes available observations. A missing observation for a stage should not be interpreted as a zero-duration operation.
+
+## 7. API and Validation
+
+The FastAPI application is accessible through:
+
+- Health endpoint: `/health`
+- API documentation: `/docs`
+- Prometheus metrics: `/metrics`
+
+Validation performed:
+
+- Docker Compose configuration validation
+- API image build
+- Container startup and health verification
+- Prometheus target verification
+- Grafana dashboard verification
+- PDF document upload
+- RAG question-answering tests
+- Document persistence verification after API container restart
+
+## 8. Deployment Commands
+
+```powershell
+docker compose config
+docker compose build api
+docker compose up -d
+docker compose ps
+```
+
+To inspect API logs:
+
+```powershell
+docker compose logs api
+```
+
+To restart the API:
+
+```powershell
+docker compose restart api
+```
+
+## 9. Current Deployment Status
+
+The API, Prometheus, and Grafana containers have been started successfully.
+
+The API health check is passing, Prometheus can scrape the API, and Grafana displays the available monitoring data.
+
+A PDF upload created and stored five additional chunks. The document count increased from 10 to 15 and remained at 15 after restarting the API container, verifying persistent ChromaDB storage.
+
+## 10. Future Scope
+
+Potential future improvements include:
+
+- More comprehensive automated integration testing
+- Improved observability and alerting
+- Production deployment configuration
+- Authentication and authorization
+- Performance and resource optimization
+
+---
+
+**Project:** Enterprise RAG Platform  
+**Documentation:** Project Foundation and Deployment Overview

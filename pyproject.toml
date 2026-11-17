@@ -22,7 +22,9 @@ dependencies = [
     "python-docx",
     "python-dotenv",
     "mcp>=2.3,<3",
-    "langgraph>=1.2,<2"
+    "langgraph>=1.2,<2",
+    "prometheus-client",
+    "python-multipart"
  
 ]
 

@@ -165,3 +165,10 @@ def test_upload_rejects_empty_file(client):
     )
 
     assert response.status_code == 400
+
+
+def test_metrics_endpoint(client):
+    response = client.get("/metrics")
+
+    assert response.status_code == 200
+    assert "rag_api_requests_total" in response.text
