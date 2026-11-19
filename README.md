@@ -17,7 +17,8 @@ The platform combines vector search, document retrieval, reranking, LangGraph wo
 - **Dockerization:** Run the API and monitoring services using Docker Compose.
 - **Persistent Storage:** Preserve vector database, uploaded documents, and monitoring data.
 
-- ## Monitoring Dashboard
+
+  ## Monitoring Dashboard
 
 The platform includes Grafana dashboards for monitoring API performance and RAG pipeline execution.
 
