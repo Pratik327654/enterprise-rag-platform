@@ -24,6 +24,12 @@ The platform includes Grafana dashboards for monitoring API performance and RAG 
 
 ![Grafana Monitoring Dashboard](docs/images/grafana-dashboard.png)
 
+ ### API Documentation (Swagger UI)
+
+The platform provides interactive API documentation using FastAPI Swagger UI.
+
+![Swagger API Documentation](docs/images/swagger-api.png)
+
 ## System Architecture
 
 ```text
