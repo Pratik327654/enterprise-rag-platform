@@ -1,0 +1,1883 @@
+{
+    "results": [
+        {
+            "id": "E01",
+            "question": "How many annual leave days does a full-time employee receive?",
+            "expected_answer": "20 days per calendar year.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+            ],
+            "retrieved_chunk_ids": [
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+            ],
+            "reranked_chunk_ids": [
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "reranker_scores": [
+                8.923194885253906,
+                2.3630950450897217,
+                -3.5767109394073486
+            ],
+            "answer": "According to the excerpts, a full-time employee receives 20 days of annual leave per calendar year.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 1.9110401000070851,
+            "reranking_latency_seconds": 2.1278929999971297,
+            "generation_latency_seconds": 15.240056599999662,
+            "total_latency_seconds": 19.27905389999796,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 1.0,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 1.0,
+                "reranking_ndcg_at_3": 1.0
+            }
+        },
+        {
+            "id": "E02",
+            "question": "How many working days in advance should planned leave be requested?",
+            "expected_answer": "At least 5 working days.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+            ],
+            "retrieved_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+            ],
+            "reranked_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "reranker_scores": [
+                8.503938674926758,
+                5.771286964416504,
+                -6.256714820861816
+            ],
+            "answer": "According to the excerpts, employees should submit planned leave requests at least five working days in advance.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.06014750000031199,
+            "reranking_latency_seconds": 0.1307976999960374,
+            "generation_latency_seconds": 0.2715654000057839,
+            "total_latency_seconds": 0.4625400999939302,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 0.5,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 0.5,
+                "reranking_ndcg_at_3": 0.6309297535714575
+            }
+        },
+        {
+            "id": "E03",
+            "question": "What happens to annual leave for employees who join during the year?",
+            "expected_answer": "Leave is prorated based on the employee's joining date.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+            ],
+            "retrieved_chunk_ids": [
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+            ],
+            "reranked_chunk_ids": [
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "reranker_scores": [
+                5.524043083190918,
+                -4.745319366455078,
+                -7.4730939865112305
+            ],
+            "answer": "According to the excerpts, employees who join during the year receive a prorated leave balance based on their joining date.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.015722700001788326,
+            "reranking_latency_seconds": 0.08104799999273382,
+            "generation_latency_seconds": 0.2706571000016993,
+            "total_latency_seconds": 0.36744180000096094,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 1.0,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 1.0,
+                "reranking_ndcg_at_3": 1.0
+            }
+        },
+        {
+            "id": "E04",
+            "question": "How many sick leave days are provided annually?",
+            "expected_answer": "10 days per calendar year.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+            ],
+            "retrieved_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "2270d1db-780e-4b7f-bb8a-a12d15af2de5",
+                "76416b5e-20be-4694-a577-94a3be45df48"
+            ],
+            "reranked_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "reranker_scores": [
+                5.908846855163574,
+                3.4132442474365234,
+                -7.981847763061523
+            ],
+            "answer": "According to the excerpts, employees receive 10 days of sick leave per calendar year.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.014895799991791137,
+            "reranking_latency_seconds": 0.08566450000216719,
+            "generation_latency_seconds": 0.22958690000814386,
+            "total_latency_seconds": 0.33016240000142716,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 1.0,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 1.0,
+                "reranking_ndcg_at_3": 1.0
+            }
+        },
+        {
+            "id": "E05",
+            "question": "When is a medical certificate required for sick leave?",
+            "expected_answer": "When an employee is absent for more than two consecutive working days due to illness.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+            ],
+            "retrieved_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "e8e82963-dac7-41e7-8a01-2482c8165d6b",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "reranked_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "reranker_scores": [
+                5.0743889808654785,
+                -7.435802936553955,
+                -11.16940689086914
+            ],
+            "answer": "According to the excerpts, a medical certificate is required for sick leave if an employee is absent for more than two consecutive working days due to illness.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.015620100006344728,
+            "reranking_latency_seconds": 0.07518109999364242,
+            "generation_latency_seconds": 0.29271690000314265,
+            "total_latency_seconds": 0.3835324999963632,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 1.0,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 1.0,
+                "reranking_ndcg_at_3": 1.0
+            }
+        },
+        {
+            "id": "E06",
+            "question": "What is the standard working schedule?",
+            "expected_answer": "Monday to Friday, 9:30 AM to 6:00 PM, with a one-hour lunch break.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+            ],
+            "retrieved_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "c605b15c-729a-4e30-868a-29faf834a391",
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce"
+            ],
+            "reranked_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+            ],
+            "reranker_scores": [
+                5.195357322692871,
+                -8.663712501525879,
+                -10.486848831176758
+            ],
+            "answer": "The standard working schedule is Monday to Friday, from 9:30 AM to 6:00 PM.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.018647400007466786,
+            "reranking_latency_seconds": 0.07268070000282023,
+            "generation_latency_seconds": 0.2667761999909999,
+            "total_latency_seconds": 0.35812210000585765,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 1.0,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 1.0,
+                "reranking_ndcg_at_3": 1.0
+            }
+        },
+        {
+            "id": "E07",
+            "question": "How many remote working days are allowed per week?",
+            "expected_answer": "Up to two days per week with prior manager approval.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "retrieved_chunk_ids": [
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "c605b15c-729a-4e30-868a-29faf834a391",
+                "a6ffd757-782c-4632-a4f2-d70c29dd2b50"
+            ],
+            "reranked_chunk_ids": [
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+            ],
+            "reranker_scores": [
+                6.162326812744141,
+                -6.251370429992676,
+                -8.997527122497559
+            ],
+            "answer": "According to the excerpts, eligible employees may work remotely up to two days per week with prior manager approval.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.017078000004403293,
+            "reranking_latency_seconds": 0.07159629999659956,
+            "generation_latency_seconds": 0.2707012000028044,
+            "total_latency_seconds": 0.359387999997125,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 1.0,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 1.0,
+                "reranking_ndcg_at_3": 1.0
+            }
+        },
+        {
+            "id": "E08",
+            "question": "Who is the organization's CEO?",
+            "expected_answer": "This information is not specified in the handbook.",
+            "answerable": false,
+            "relevant_chunk_ids": [
+                "b4120ee9-4184-4719-886a-882a4ffe4698"
+            ],
+            "retrieved_chunk_ids": [
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "060d44bc-7b79-489a-89a8-22524a0c1f81",
+                "ea08db7e-4cfe-4eda-99e8-46a5ecc9f100",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8",
+                "01379077-b514-40d4-8ee2-1fc31fddf681"
+            ],
+            "reranked_chunk_ids": [
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "060d44bc-7b79-489a-89a8-22524a0c1f81",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+            ],
+            "reranker_scores": [
+                -1.9793404340744019,
+                -8.417082786560059,
+                -11.190802574157715
+            ],
+            "answer": "The organization's CEO is not specified in the excerpts.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "3e0be8f1-2e53-4945-bda4-240f27f1bcce"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 5,
+                    "chunk_id": "060d44bc-7b79-489a-89a8-22524a0c1f81"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.015579300001263618,
+            "reranking_latency_seconds": 0.06900060000771191,
+            "generation_latency_seconds": 0.17508839999209158,
+            "total_latency_seconds": 0.2596810999966692,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.0,
+                "retrieval_recall_at_5": 0.0,
+                "retrieval_mrr_at_5": 0.0,
+                "reranking_precision_at_3": 0.0,
+                "reranking_recall_at_3": 0.0,
+                "reranking_mrr_at_3": 0.0,
+                "reranking_ndcg_at_3": 0.0
+            }
+        },
+        {
+            "id": "E09",
+            "question": "What are the employee salary bands?",
+            "expected_answer": "This information is not specified in the handbook.",
+            "answerable": false,
+            "relevant_chunk_ids": [
+                "b4120ee9-4184-4719-886a-882a4ffe4698"
+            ],
+            "retrieved_chunk_ids": [
+                "4bff4ba3-831e-4555-8c9b-70ced4d99dd9",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "ea08db7e-4cfe-4eda-99e8-46a5ecc9f100"
+            ],
+            "reranked_chunk_ids": [
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "ea08db7e-4cfe-4eda-99e8-46a5ecc9f100"
+            ],
+            "reranker_scores": [
+                -1.6190118789672852,
+                -9.351949691772461,
+                -9.882253646850586
+            ],
+            "answer": "Based on the excerpts, the employee salary bands are not specified.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "3e0be8f1-2e53-4945-bda4-240f27f1bcce"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 36,
+                    "chunk_id": "ea08db7e-4cfe-4eda-99e8-46a5ecc9f100"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.01564370001142379,
+            "reranking_latency_seconds": 0.0729460000002291,
+            "generation_latency_seconds": 0.17698389998986386,
+            "total_latency_seconds": 0.2655858999933116,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.0,
+                "retrieval_recall_at_5": 0.0,
+                "retrieval_mrr_at_5": 0.0,
+                "reranking_precision_at_3": 0.0,
+                "reranking_recall_at_3": 0.0,
+                "reranking_mrr_at_3": 0.0,
+                "reranking_ndcg_at_3": 0.0
+            }
+        },
+        {
+            "id": "E10",
+            "question": "What is the company's registered office address?",
+            "expected_answer": "This information is not specified in the handbook.",
+            "answerable": false,
+            "relevant_chunk_ids": [
+                "b4120ee9-4184-4719-886a-882a4ffe4698"
+            ],
+            "retrieved_chunk_ids": [
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8",
+                "060d44bc-7b79-489a-89a8-22524a0c1f81",
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "92a6bd40-819f-4e7b-ab69-d1a13dcf88d5",
+                "4bff4ba3-831e-4555-8c9b-70ced4d99dd9"
+            ],
+            "reranked_chunk_ids": [
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "060d44bc-7b79-489a-89a8-22524a0c1f81",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+            ],
+            "reranker_scores": [
+                -1.9748094081878662,
+                -10.844379425048828,
+                -11.232282638549805
+            ],
+            "answer": "The company's registered office address is not specified in the excerpts.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "3e0be8f1-2e53-4945-bda4-240f27f1bcce"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 5,
+                    "chunk_id": "060d44bc-7b79-489a-89a8-22524a0c1f81"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.019685899998876266,
+            "reranking_latency_seconds": 0.08569219999480993,
+            "generation_latency_seconds": 0.18273539999790955,
+            "total_latency_seconds": 0.288126800005557,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.0,
+                "retrieval_recall_at_5": 0.0,
+                "retrieval_mrr_at_5": 0.0,
+                "reranking_precision_at_3": 0.0,
+                "reranking_recall_at_3": 0.0,
+                "reranking_mrr_at_3": 0.0,
+                "reranking_ndcg_at_3": 0.0
+            }
+        },
+        {
+            "id": "D01",
+            "question": "What is data according to the lesson?",
+            "expected_answer": "Data refers to facts and figures that researchers collect, analyze, and summarize for presentation and interpretation.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "9e36b82f-a2ff-4e8a-9a36-1de0df847b33"
+            ],
+            "retrieved_chunk_ids": [
+                "3b15da1f-b408-4e80-83aa-5bdfd82a6ae4",
+                "bdd2a29c-ee70-489d-8314-765dc1ea4635",
+                "8c414d1e-f3aa-480c-b34b-0fead2e042cf",
+                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
+                "bb812949-b84c-4d7d-92e1-9c2ab6787087"
+            ],
+            "reranked_chunk_ids": [
+                "8c414d1e-f3aa-480c-b34b-0fead2e042cf",
+                "bdd2a29c-ee70-489d-8314-765dc1ea4635",
+                "bb812949-b84c-4d7d-92e1-9c2ab6787087"
+            ],
+            "reranker_scores": [
+                0.8020055294036865,
+                -1.420776605606079,
+                -4.288369178771973
+            ],
+            "answer": "According to the excerpts, data is the foundational information used to produce statistics.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 3,
+                    "chunk_id": "8c414d1e-f3aa-480c-b34b-0fead2e042cf"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 10,
+                    "chunk_id": "bdd2a29c-ee70-489d-8314-765dc1ea4635"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 21,
+                    "chunk_id": "bb812949-b84c-4d7d-92e1-9c2ab6787087"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.020674299987149425,
+            "reranking_latency_seconds": 0.06658860000607092,
+            "generation_latency_seconds": 0.23286419999203645,
+            "total_latency_seconds": 0.32016879999719094,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.0,
+                "retrieval_recall_at_5": 0.0,
+                "retrieval_mrr_at_5": 0.0,
+                "reranking_precision_at_3": 0.0,
+                "reranking_recall_at_3": 0.0,
+                "reranking_mrr_at_3": 0.0,
+                "reranking_ndcg_at_3": 0.0
+            }
+        },
+        {
+            "id": "D02",
+            "question": "What are the two main types of data?",
+            "expected_answer": "Qualitative and quantitative data.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "9e36b82f-a2ff-4e8a-9a36-1de0df847b33"
+            ],
+            "retrieved_chunk_ids": [
+                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
+                "e09442ff-9a8b-42d7-9c50-76d748369403",
+                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7",
+                "41655fd7-3822-496b-baaf-5c48faee0d28",
+                "ad93545b-1d63-4fa8-ac06-cb5a9bd59c2e"
+            ],
+            "reranked_chunk_ids": [
+                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7",
+                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
+                "e09442ff-9a8b-42d7-9c50-76d748369403"
+            ],
+            "reranker_scores": [
+                4.631244659423828,
+                1.0848064422607422,
+                0.35412314534187317
+            ],
+            "answer": "Based on the document excerpts, the two main types of data are:\n\n1. Structured data (referred to as \"data recorded or stored in a predefined format for easy search and use during analysis\")\n2. Unstructured data (referred to as \"data not recorded in a predefined format, such as document collection through invoices, records, emails, and productivity applications\")",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 55,
+                    "chunk_id": "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 35,
+                    "chunk_id": "701f5952-e6ed-4542-b1d7-2e3887cbdc6b"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 6,
+                    "chunk_id": "e09442ff-9a8b-42d7-9c50-76d748369403"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.02454500000749249,
+            "reranking_latency_seconds": 0.08826420000696089,
+            "generation_latency_seconds": 1.8265083000005689,
+            "total_latency_seconds": 1.939331300003687,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.0,
+                "retrieval_recall_at_5": 0.0,
+                "retrieval_mrr_at_5": 0.0,
+                "reranking_precision_at_3": 0.0,
+                "reranking_recall_at_3": 0.0,
+                "reranking_mrr_at_3": 0.0,
+                "reranking_ndcg_at_3": 0.0
+            }
+        },
+        {
+            "id": "D03",
+            "question": "What is quantitative data?",
+            "expected_answer": "Data specified numerically through a process of measurement or numerical count.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "92829cc3-21a1-466e-8c66-7f74ed3ff5a8"
+            ],
+            "retrieved_chunk_ids": [
+                "92829cc3-21a1-466e-8c66-7f74ed3ff5a8",
+                "bdd2a29c-ee70-489d-8314-765dc1ea4635",
+                "aef925fe-cf60-456f-a388-fb1204679c32",
+                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
+                "563910eb-5320-404f-baaa-3682239f61ac"
+            ],
+            "reranked_chunk_ids": [
+                "92829cc3-21a1-466e-8c66-7f74ed3ff5a8",
+                "aef925fe-cf60-456f-a388-fb1204679c32",
+                "563910eb-5320-404f-baaa-3682239f61ac"
+            ],
+            "reranker_scores": [
+                9.50015926361084,
+                5.626044273376465,
+                3.428847074508667
+            ],
+            "answer": "Based on the document excerpts, quantitative data is defined as data that is specified numerically through a process of measurement or numerical count, and is referred to as \"quantitative, variable, or measurable data\".",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 20,
+                    "chunk_id": "92829cc3-21a1-466e-8c66-7f74ed3ff5a8"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 19,
+                    "chunk_id": "aef925fe-cf60-456f-a388-fb1204679c32"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 22,
+                    "chunk_id": "563910eb-5320-404f-baaa-3682239f61ac"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.30007369999657385,
+            "reranking_latency_seconds": 0.24669329999596812,
+            "generation_latency_seconds": 0.5467417999898316,
+            "total_latency_seconds": 1.0935595000046305,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 1.0,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 1.0,
+                "reranking_ndcg_at_3": 1.0
+            }
+        },
+        {
+            "id": "D04",
+            "question": "What is primary data?",
+            "expected_answer": "Primary data refers specifically to data related to the problem under investigation.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "2f305c7b-6cfc-4d08-af35-817ff031a1a9"
+            ],
+            "retrieved_chunk_ids": [
+                "2f305c7b-6cfc-4d08-af35-817ff031a1a9",
+                "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8",
+                "d495e199-c157-48d5-b731-d36e3b51291a",
+                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
+                "bdd2a29c-ee70-489d-8314-765dc1ea4635"
+            ],
+            "reranked_chunk_ids": [
+                "2f305c7b-6cfc-4d08-af35-817ff031a1a9",
+                "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8",
+                "d495e199-c157-48d5-b731-d36e3b51291a"
+            ],
+            "reranker_scores": [
+                10.123404502868652,
+                4.968045234680176,
+                2.4210870265960693
+            ],
+            "answer": "Based on the excerpts, primary data refers specifically to the data related to the problem under investigation, as stated in source reference [S1].",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 32,
+                    "chunk_id": "2f305c7b-6cfc-4d08-af35-817ff031a1a9"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 33,
+                    "chunk_id": "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 31,
+                    "chunk_id": "d495e199-c157-48d5-b731-d36e3b51291a"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.017938899996806867,
+            "reranking_latency_seconds": 0.05361529999936465,
+            "generation_latency_seconds": 0.34110940000391565,
+            "total_latency_seconds": 0.4127031999960309,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 1.0,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 1.0,
+                "reranking_ndcg_at_3": 1.0
+            }
+        },
+        {
+            "id": "D05",
+            "question": "What is secondary data?",
+            "expected_answer": "Data that someone else or another company has already collected and analyzed.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8"
+            ],
+            "retrieved_chunk_ids": [
+                "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8",
+                "2f305c7b-6cfc-4d08-af35-817ff031a1a9",
+                "d495e199-c157-48d5-b731-d36e3b51291a",
+                "3b15da1f-b408-4e80-83aa-5bdfd82a6ae4",
+                "23648583-6efc-4fbe-b1ef-798b5bdab987"
+            ],
+            "reranked_chunk_ids": [
+                "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8",
+                "2f305c7b-6cfc-4d08-af35-817ff031a1a9",
+                "d495e199-c157-48d5-b731-d36e3b51291a"
+            ],
+            "reranker_scores": [
+                9.93887710571289,
+                3.7061915397644043,
+                3.2545628547668457
+            ],
+            "answer": "Based on the excerpts, secondary data refers to data that someone else or another company has already collected and analyzed, which can be found in various sources such as government publications, academic journals, and commercial databases.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 33,
+                    "chunk_id": "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 32,
+                    "chunk_id": "2f305c7b-6cfc-4d08-af35-817ff031a1a9"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 31,
+                    "chunk_id": "d495e199-c157-48d5-b731-d36e3b51291a"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.022299899996141903,
+            "reranking_latency_seconds": 0.05784149999090005,
+            "generation_latency_seconds": 0.4564400000090245,
+            "total_latency_seconds": 0.5366162999998778,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 1.0,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 1.0,
+                "reranking_ndcg_at_3": 1.0
+            }
+        },
+        {
+            "id": "D06",
+            "question": "What is structured data?",
+            "expected_answer": "Data recorded or stored in a predefined format for easy search and use during analysis.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "19bd3da4-1e76-47ac-ba07-79a45b0ef7e9"
+            ],
+            "retrieved_chunk_ids": [
+                "19db3da4-1e76-47ac-ba07-79a45b0ef7e9",
+                "c582004f-4374-4750-87bb-4756bfadfe5a",
+                "0b99cba6-d395-4713-b4cd-05578c4c569d",
+                "67b0503f-0b14-40cf-9005-b58b1033df94",
+                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7"
+            ],
+            "reranked_chunk_ids": [
+                "19db3da4-1e76-47ac-ba07-79a45b0ef7e9",
+                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7",
+                "67b0503f-0b14-40cf-9005-b58b1033df94"
+            ],
+            "reranker_scores": [
+                9.159479141235352,
+                7.573145866394043,
+                7.043669700622559
+            ],
+            "answer": "Based on the excerpts, structured data is data recorded or stored in a predefined format for easy search and use during analysis, such as a collection of stock at the end of a month.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 48,
+                    "chunk_id": "19db3da4-1e76-47ac-ba07-79a45b0ef7e9"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 55,
+                    "chunk_id": "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 54,
+                    "chunk_id": "67b0503f-0b14-40cf-9005-b58b1033df94"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.02075409999815747,
+            "reranking_latency_seconds": 0.08013139999820851,
+            "generation_latency_seconds": 0.39572770000086166,
+            "total_latency_seconds": 0.4966261000081431,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.0,
+                "retrieval_recall_at_5": 0.0,
+                "retrieval_mrr_at_5": 0.0,
+                "reranking_precision_at_3": 0.0,
+                "reranking_recall_at_3": 0.0,
+                "reranking_mrr_at_3": 0.0,
+                "reranking_ndcg_at_3": 0.0
+            }
+        },
+        {
+            "id": "D07",
+            "question": "Give examples of unstructured data mentioned in the lesson.",
+            "expected_answer": "Invoices, records, emails, and productivity applications.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "5602b16d-b4c6-4b2f-9fba-367d8a584bec"
+            ],
+            "retrieved_chunk_ids": [
+                "0b99cba6-d395-4713-b4cd-05578c4c569d",
+                "5602b16d-b4c6-4b2f-9fba-367d8a584bec",
+                "c582004f-4374-4750-87bb-4756bfadfe5a",
+                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7",
+                "02703669-c883-49db-9fe7-9038187a179f"
+            ],
+            "reranked_chunk_ids": [
+                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7",
+                "0b99cba6-d395-4713-b4cd-05578c4c569d",
+                "02703669-c883-49db-9fe7-9038187a179f"
+            ],
+            "reranker_scores": [
+                5.971700668334961,
+                4.267381191253662,
+                3.0868942737579346
+            ],
+            "answer": "Based on the document excerpts, examples of unstructured data mentioned are:\n\nDocument collection through invoices, records, emails, and productivity applications.\n\nSource reference: [S1] Types of Data",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 55,
+                    "chunk_id": "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 46,
+                    "chunk_id": "0b99cba6-d395-4713-b4cd-05578c4c569d"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 4,
+                    "chunk_id": "02703669-c883-49db-9fe7-9038187a179f"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.017519499990157783,
+            "reranking_latency_seconds": 0.0663771999970777,
+            "generation_latency_seconds": 0.5964490000042133,
+            "total_latency_seconds": 0.6803703999903519,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 0.5,
+                "reranking_precision_at_3": 0.0,
+                "reranking_recall_at_3": 0.0,
+                "reranking_mrr_at_3": 0.0,
+                "reranking_ndcg_at_3": 0.0
+            }
+        },
+        {
+            "id": "D08",
+            "question": "What is cross-sectional data?",
+            "expected_answer": "Data collected by observing numerous subjects at a specific point in time.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "bccd7b8d-dc2d-4823-9fa8-c210544b0626"
+            ],
+            "retrieved_chunk_ids": [
+                "bccd7b8d-dc2d-4823-9fa8-c210544b0626",
+                "c4d74d6d-78fc-442b-930c-57274fbfb5b3",
+                "9e36b82f-a2ff-48e6-9a36-1de0df847b33",
+                "410f5092-0be8-44b7-ab7a-54972e5bb21b",
+                "21896275-47d9-494c-9c96-785b7751b0df"
+            ],
+            "reranked_chunk_ids": [
+                "bccd7b8d-dc2d-4823-9fa8-c210544b0626",
+                "21896275-47d9-494c-9c96-785b7751b0df",
+                "c4d74d6d-78fc-442b-930c-57274fbfb5b3"
+            ],
+            "reranker_scores": [
+                9.812721252441406,
+                8.684528350830078,
+                8.578471183776855
+            ],
+            "answer": "Based on the excerpts, the correct answer is:\n\nB. Individuals\n\nThe excerpt states: \"Cross-sectional data pertains to data collected by observing numerous subjects at a specific point in time, such as: Individuals\"",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 39,
+                    "chunk_id": "bccd7b8d-dc2d-4823-9fa8-c210544b0626"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 43,
+                    "chunk_id": "21896275-47d9-494c-9c96-785b7751b0df"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 76,
+                    "chunk_id": "c4d74d6d-78fc-442b-930c-57274fbfb5b3"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.5354435000044759,
+            "reranking_latency_seconds": 0.048622700007399544,
+            "generation_latency_seconds": 0.5979260000021895,
+            "total_latency_seconds": 1.1820067000080599,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 1.0,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 1.0,
+                "reranking_ndcg_at_3": 1.0
+            }
+        },
+        {
+            "id": "D09",
+            "question": "What is time-series data?",
+            "expected_answer": "Data collected over a period of time, such as annual sales of a specific commodity over several years.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "6ba07510-01fa-489b-ac2d-172dc440fa8f"
+            ],
+            "retrieved_chunk_ids": [
+                "6ba07510-01fa-489b-ac2d-172dc440fa8f",
+                "adc77626-2730-4533-9f58-d43cd3efa589",
+                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
+                "563910eb-5320-404f-baaa-3682239f61ac",
+                "bdd2a29c-ee70-489d-8314-765dc1ea4635"
+            ],
+            "reranked_chunk_ids": [
+                "6ba07510-01fa-489b-ac2d-172dc440fa8f",
+                "adc77626-2730-4533-9f58-d43cd3efa589",
+                "563910eb-5320-404f-baaa-3682239f61ac"
+            ],
+            "reranker_scores": [
+                9.610401153564453,
+                3.6717300415039062,
+                -6.134832382202148
+            ],
+            "answer": "Based on the excerpts, the correct answer is:\n\nB. Time series data\n\nSource reference: Document excerpts.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 41,
+                    "chunk_id": "6ba07510-01fa-489b-ac2d-172dc440fa8f"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 77,
+                    "chunk_id": "adc77626-2730-4533-9f58-d43cd3efa589"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 22,
+                    "chunk_id": "563910eb-5320-404f-baaa-3682239f61ac"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.01493089999712538,
+            "reranking_latency_seconds": 0.05078390000562649,
+            "generation_latency_seconds": 0.2599423000065144,
+            "total_latency_seconds": 0.32567230000859126,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 1.0,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 1.0,
+                "reranking_ndcg_at_3": 1.0
+            }
+        },
+        {
+            "id": "D10",
+            "question": "What is panel data?",
+            "expected_answer": "Panel data, also known as longitudinal data, is data collected over time from cross-sectional units.",
+            "answerable": true,
+            "relevant_chunk_ids": [
+                "5cd380cc-2b64-4be6-a108-7b3b76cec5c9"
+            ],
+            "retrieved_chunk_ids": [
+                "5cd380cc-2b64-4be6-a108-7b3b76cec5c9",
+                "adc77626-2730-4533-9f58-d43cd3efa589",
+                "0fb9b24d-89fd-4dc5-82c6-90b8b015081f",
+                "410f5092-0be8-44b7-ab7a-54972e5bb21b",
+                "c4d74d6d-78fc-442b-930c-57274fbfb5b3"
+            ],
+            "reranked_chunk_ids": [
+                "5cd380cc-2b64-4be6-a108-7b3b76cec5c9",
+                "c4d74d6d-78fc-442b-930c-57274fbfb5b3",
+                "0fb9b24d-89fd-4dc5-82c6-90b8b015081f"
+            ],
+            "reranker_scores": [
+                9.008682250976562,
+                0.9219487905502319,
+                0.6202375888824463
+            ],
+            "answer": "Based on the excerpts, the correct answer is:\n\nB. Cross-sectional data\n\nSource reference: Document excerpts.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 42,
+                    "chunk_id": "5cd380cc-2b64-4be6-a108-7b3b76cec5c9"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 76,
+                    "chunk_id": "c4d74d6d-78fc-442b-930c-57274fbfb5b3"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 75,
+                    "chunk_id": "0fb9b24d-89fd-4dc5-82c6-90b8b015081f"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.016238099997281097,
+            "reranking_latency_seconds": 0.04328779999923427,
+            "generation_latency_seconds": 0.44640240000444464,
+            "total_latency_seconds": 0.5059416000003694,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": 0.2,
+                "retrieval_recall_at_5": 1.0,
+                "retrieval_mrr_at_5": 1.0,
+                "reranking_precision_at_3": 0.3333333333333333,
+                "reranking_recall_at_3": 1.0,
+                "reranking_mrr_at_3": 1.0,
+                "reranking_ndcg_at_3": 1.0
+            }
+        },
+        {
+            "id": "S01",
+            "question": "What is sampling?",
+            "expected_answer": "Sampling is a statistical technique that involves performing a predetermined number of observations on a population.",
+            "answerable": true,
+            "relevant_chunk_ids": [],
+            "retrieved_chunk_ids": [
+                "2d71ecdb-c2b7-4d7b-9696-5c44b44e7214",
+                "2e1d78b6-0873-4255-9ede-a9d756004069",
+                "50891185-1486-4aa5-a345-3dfa516ae515",
+                "c8046386-f95c-416d-af89-17ecde4e8437",
+                "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7"
+            ],
+            "reranked_chunk_ids": [
+                "2d71ecdb-c2b7-4d7b-9696-5c44b44e7214",
+                "50891185-1486-4aa5-a345-3dfa516ae515",
+                "c8046386-f95c-416d-af89-17ecde4e8437"
+            ],
+            "reranker_scores": [
+                9.993789672851562,
+                8.165706634521484,
+                5.850419998168945
+            ],
+            "answer": "Based on the excerpts, sampling is the process of selecting a subset of a population to represent the entire population, allowing for the testing of a hypothesis about a population's characteristics.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 8,
+                    "chunk_id": "2d71ecdb-c2b7-4d7b-9696-5c44b44e7214"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 83,
+                    "chunk_id": "50891185-1486-4aa5-a345-3dfa516ae515"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 24,
+                    "chunk_id": "c8046386-f95c-416d-af89-17ecde4e8437"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.3688191999972332,
+            "reranking_latency_seconds": 0.04725400000461377,
+            "generation_latency_seconds": 0.5131865000003017,
+            "total_latency_seconds": 0.9292854000086663,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": null,
+                "retrieval_recall_at_5": null,
+                "retrieval_mrr_at_5": null,
+                "reranking_precision_at_3": null,
+                "reranking_recall_at_3": null,
+                "reranking_mrr_at_3": null,
+                "reranking_ndcg_at_3": null
+            }
+        },
+        {
+            "id": "S02",
+            "question": "What is simple random sampling?",
+            "expected_answer": "A technique of sample selection in which every sample has an equal probability of selection.",
+            "answerable": true,
+            "relevant_chunk_ids": [],
+            "retrieved_chunk_ids": [
+                "7556b2da-6e39-44eb-b24d-fe75e1d92c44",
+                "50891185-1486-4aa5-a345-3dfa516ae515",
+                "c8046386-f95c-416d-af89-17ecde4e8437",
+                "2e1d78b6-0873-4255-9ede-a9d756004069",
+                "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7"
+            ],
+            "reranked_chunk_ids": [
+                "7556b2da-6e39-44eb-b24d-fe75e1d92c44",
+                "50891185-1486-4aa5-a345-3dfa516ae515",
+                "c8046386-f95c-416d-af89-17ecde4e8437"
+            ],
+            "reranker_scores": [
+                11.157702445983887,
+                7.443293571472168,
+                3.604318141937256
+            ],
+            "answer": "Based on the excerpts, simple random sampling is a technique where every sample has an equal probability of selection.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 26,
+                    "chunk_id": "7556b2da-6e39-44eb-b24d-fe75e1d92c44"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 83,
+                    "chunk_id": "50891185-1486-4aa5-a345-3dfa516ae515"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 24,
+                    "chunk_id": "c8046386-f95c-416d-af89-17ecde4e8437"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.014292099993326701,
+            "reranking_latency_seconds": 0.04344310000305995,
+            "generation_latency_seconds": 0.23615070000232663,
+            "total_latency_seconds": 0.29389839999203105,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": null,
+                "retrieval_recall_at_5": null,
+                "retrieval_mrr_at_5": null,
+                "reranking_precision_at_3": null,
+                "reranking_recall_at_3": null,
+                "reranking_mrr_at_3": null,
+                "reranking_ndcg_at_3": null
+            }
+        },
+        {
+            "id": "S03",
+            "question": "What is systematic sampling?",
+            "expected_answer": "A probability sampling technique in which researchers randomly select members of a population at regular intervals.",
+            "answerable": true,
+            "relevant_chunk_ids": [],
+            "retrieved_chunk_ids": [
+                "28101711-7e13-42c8-8228-9e4c48caee23",
+                "4f9489ce-2a62-4fed-af24-3f7021d0835e",
+                "50891185-1486-4aa5-a345-3dfa516ae515",
+                "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7",
+                "9bb5ba1b-6bec-42ea-b306-1ed00a5fbe32"
+            ],
+            "reranked_chunk_ids": [
+                "28101711-7e13-42c8-8228-9e4c48caee23",
+                "4f9489ce-2a62-4fed-af24-3f7021d0835e",
+                "50891185-1486-4aa5-a345-3dfa516ae515"
+            ],
+            "reranker_scores": [
+                10.260520935058594,
+                7.753272533416748,
+                3.416541576385498
+            ],
+            "answer": "Systematic sampling is a probability sampling technique in which researchers randomly select members of a population at regular intervals, maintaining both efficiency and the original order of the units.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 29,
+                    "chunk_id": "28101711-7e13-42c8-8228-9e4c48caee23"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 32,
+                    "chunk_id": "4f9489ce-2a62-4fed-af24-3f7021d0835e"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 83,
+                    "chunk_id": "50891185-1486-4aa5-a345-3dfa516ae515"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.013411099993390962,
+            "reranking_latency_seconds": 0.045284599997103214,
+            "generation_latency_seconds": 0.43721210000512656,
+            "total_latency_seconds": 0.4959196999989217,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": null,
+                "retrieval_recall_at_5": null,
+                "retrieval_mrr_at_5": null,
+                "reranking_precision_at_3": null,
+                "reranking_recall_at_3": null,
+                "reranking_mrr_at_3": null,
+                "reranking_ndcg_at_3": null
+            }
+        },
+        {
+            "id": "S04",
+            "question": "A population has 500 units and the required sample is 50. What is the sampling interval?",
+            "expected_answer": "The sampling interval is k = N/n = 500/50 = 10.",
+            "answerable": true,
+            "relevant_chunk_ids": [],
+            "retrieved_chunk_ids": [
+                "ad7ac509-2859-4529-869b-b055b03cb41c",
+                "890ca483-5f4c-43ca-b3ef-32866558be69",
+                "2e1d78b6-0873-4255-9ede-a9d756004069",
+                "7e84f6a0-c74f-40fe-a87b-dd5f5c6149e2",
+                "66f4c3fd-0558-4f1f-8ceb-952fbdb16640"
+            ],
+            "reranked_chunk_ids": [
+                "7e84f6a0-c74f-40fe-a87b-dd5f5c6149e2",
+                "890ca483-5f4c-43ca-b3ef-32866558be69",
+                "66f4c3fd-0558-4f1f-8ceb-952fbdb16640"
+            ],
+            "reranker_scores": [
+                6.672430992126465,
+                -1.8161263465881348,
+                -2.3481316566467285
+            ],
+            "answer": "Based on the excerpts, the sampling interval is 10.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 30,
+                    "chunk_id": "7e84f6a0-c74f-40fe-a87b-dd5f5c6149e2"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 60,
+                    "chunk_id": "890ca483-5f4c-43ca-b3ef-32866558be69"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 28,
+                    "chunk_id": "66f4c3fd-0558-4f1f-8ceb-952fbdb16640"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.01592510000045877,
+            "reranking_latency_seconds": 0.4010075000114739,
+            "generation_latency_seconds": 1.5047703000018373,
+            "total_latency_seconds": 1.9217157999955816,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": null,
+                "retrieval_recall_at_5": null,
+                "retrieval_mrr_at_5": null,
+                "reranking_precision_at_3": null,
+                "reranking_recall_at_3": null,
+                "reranking_mrr_at_3": null,
+                "reranking_ndcg_at_3": null
+            }
+        },
+        {
+            "id": "S05",
+            "question": "What is stratified random sampling?",
+            "expected_answer": "A sampling method that divides a population into smaller subgroups known as strata, from which random samples are drawn.",
+            "answerable": true,
+            "relevant_chunk_ids": [],
+            "retrieved_chunk_ids": [
+                "80d2501f-4212-46e4-b89f-d4839241e208",
+                "59f99220-d17a-40ca-a226-4711d746ca33",
+                "935c8e70-5eb5-4c3f-b648-1beac903181f",
+                "85b11848-b7bd-4325-a554-a1eac15867bd",
+                "ea08db7e-4cfe-4eda-99e8-46a5ecc9f100"
+            ],
+            "reranked_chunk_ids": [
+                "80d2501f-4212-46e4-b89f-d4839241e208",
+                "935c8e70-5eb5-4c3f-b648-1beac903181f",
+                "59f99220-d17a-40ca-a226-4711d746ca33"
+            ],
+            "reranker_scores": [
+                10.251328468322754,
+                8.768863677978516,
+                7.681424140930176
+            ],
+            "answer": "Based on the document excerpts, stratified random sampling is a method that divides a population into smaller subgroups known as strata, and then draws a random sample from each stratum in a way that is proportional to the size of the stratum in comparison to the population.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 33,
+                    "chunk_id": "80d2501f-4212-46e4-b89f-d4839241e208"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 34,
+                    "chunk_id": "935c8e70-5eb5-4c3f-b648-1beac903181f"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 35,
+                    "chunk_id": "59f99220-d17a-40ca-a226-4711d746ca33"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.012854499989771284,
+            "reranking_latency_seconds": 0.03311990000656806,
+            "generation_latency_seconds": 0.6513857999962056,
+            "total_latency_seconds": 0.6973742999980459,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": null,
+                "retrieval_recall_at_5": null,
+                "retrieval_mrr_at_5": null,
+                "reranking_precision_at_3": null,
+                "reranking_recall_at_3": null,
+                "reranking_mrr_at_3": null,
+                "reranking_ndcg_at_3": null
+            }
+        },
+        {
+            "id": "S06",
+            "question": "What is cluster sampling?",
+            "expected_answer": "A method in which the population is divided into clusters, a sample of clusters is selected, and all units from the selected clusters constitute the sample.",
+            "answerable": true,
+            "relevant_chunk_ids": [],
+            "retrieved_chunk_ids": [
+                "c92f4a80-3f53-4215-86a4-7122c53cf396",
+                "85b11848-b7bd-4325-a554-a1eac15867bd",
+                "9bb5ba1b-6bec-42ea-b306-1ed00a5fbe32",
+                "2d71ecdb-c2b7-4d7b-9696-5c44b44e7214",
+                "50891185-1486-4aa5-a345-3dfa516ae515"
+            ],
+            "reranked_chunk_ids": [
+                "c92f4a80-3f53-4215-86a4-7122c53cf396",
+                "85b11848-b7bd-4325-a554-a1eac15867bd",
+                "2d71ecdb-c2b7-4d7b-9696-5c44b44e7214"
+            ],
+            "reranker_scores": [
+                10.307315826416016,
+                9.600757598876953,
+                2.091905117034912
+            ],
+            "answer": "Based on the excerpts, cluster sampling is a method in which the population is divided into several clusters, and a sample of clusters is selected using simple or stratified random sampling.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 37,
+                    "chunk_id": "c92f4a80-3f53-4215-86a4-7122c53cf396"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 38,
+                    "chunk_id": "85b11848-b7bd-4325-a554-a1eac15867bd"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 8,
+                    "chunk_id": "2d71ecdb-c2b7-4d7b-9696-5c44b44e7214"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.014213599992217496,
+            "reranking_latency_seconds": 0.044400900005712174,
+            "generation_latency_seconds": 0.584908800010453,
+            "total_latency_seconds": 0.6435339000017848,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": null,
+                "retrieval_recall_at_5": null,
+                "retrieval_mrr_at_5": null,
+                "reranking_precision_at_3": null,
+                "reranking_recall_at_3": null,
+                "reranking_mrr_at_3": null,
+                "reranking_ndcg_at_3": null
+            }
+        },
+        {
+            "id": "S07",
+            "question": "What are the four non-probability sampling methods?",
+            "expected_answer": "Convenience sampling, voluntary response sampling, snowball sampling, and judgmental or purposive sampling.",
+            "answerable": true,
+            "relevant_chunk_ids": [],
+            "retrieved_chunk_ids": [
+                "095f2764-5763-49a7-b123-b30a42b2e1cf",
+                "dc076c98-b98b-4c18-94fd-a092004cb514",
+                "3fd07e3f-9842-4edd-ae82-a2cd80c6cb1f",
+                "93fc96e5-ecf0-494c-b461-0445fd3f53b9",
+                "9bb5ba1b-6bec-42ea-b306-1ed00a5fbe32"
+            ],
+            "reranked_chunk_ids": [
+                "095f2764-5763-49a7-b123-b30a42b2e1cf",
+                "3fd07e3f-9842-4edd-ae82-a2cd80c6cb1f",
+                "9bb5ba1b-6bec-42ea-b306-1ed00a5fbe32"
+            ],
+            "reranker_scores": [
+                10.65479850769043,
+                10.441207885742188,
+                6.0243377685546875
+            ],
+            "answer": "Based on the document excerpts, the four non-probability sampling methods are:\n\n1. Convenience sampling\n2. Voluntary response sampling\n3. Judgmental or purposive sampling\n4. Snowball sampling\n\nSource reference: Document excerpts.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 46,
+                    "chunk_id": "095f2764-5763-49a7-b123-b30a42b2e1cf"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 84,
+                    "chunk_id": "3fd07e3f-9842-4edd-ae82-a2cd80c6cb1f"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 25,
+                    "chunk_id": "9bb5ba1b-6bec-42ea-b306-1ed00a5fbe32"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.013291300012497231,
+            "reranking_latency_seconds": 0.03186969998932909,
+            "generation_latency_seconds": 0.6001592000102391,
+            "total_latency_seconds": 0.6453508000122383,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": null,
+                "retrieval_recall_at_5": null,
+                "retrieval_mrr_at_5": null,
+                "reranking_precision_at_3": null,
+                "reranking_recall_at_3": null,
+                "reranking_mrr_at_3": null,
+                "reranking_ndcg_at_3": null
+            }
+        },
+        {
+            "id": "S08",
+            "question": "What is convenience sampling?",
+            "expected_answer": "A type of non-probability sampling in which the researcher selects the sample based on convenience rather than random selection.",
+            "answerable": true,
+            "relevant_chunk_ids": [],
+            "retrieved_chunk_ids": [
+                "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7",
+                "c4bc5c6c-144a-490b-8ec5-5488f9c79b21",
+                "95e22883-48e8-4c21-8500-dacc67ffabdd",
+                "decf98d9-481b-497e-88ff-ffd2b5734068",
+                "f2577f80-f41f-4284-9b3d-b2ece6642c01"
+            ],
+            "reranked_chunk_ids": [
+                "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7",
+                "95e22883-48e8-4c21-8500-dacc67ffabdd",
+                "decf98d9-481b-497e-88ff-ffd2b5734068"
+            ],
+            "reranker_scores": [
+                10.427265167236328,
+                8.117058753967285,
+                7.882570266723633
+            ],
+            "answer": "Based on the excerpts, convenience sampling is an approach to sample selection in which sample units are chosen entirely on considerations of convenience.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 47,
+                    "chunk_id": "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 48,
+                    "chunk_id": "95e22883-48e8-4c21-8500-dacc67ffabdd"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 57,
+                    "chunk_id": "decf98d9-481b-497e-88ff-ffd2b5734068"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.0139093000034336,
+            "reranking_latency_seconds": 0.04658029999700375,
+            "generation_latency_seconds": 0.32232659999863245,
+            "total_latency_seconds": 0.3828279000008479,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": null,
+                "retrieval_recall_at_5": null,
+                "retrieval_mrr_at_5": null,
+                "reranking_precision_at_3": null,
+                "reranking_recall_at_3": null,
+                "reranking_mrr_at_3": null,
+                "reranking_ndcg_at_3": null
+            }
+        },
+        {
+            "id": "S09",
+            "question": "What is voluntary response sampling?",
+            "expected_answer": "A type of non-probability sampling in which participants volunteer to participate in the study.",
+            "answerable": true,
+            "relevant_chunk_ids": [],
+            "retrieved_chunk_ids": [
+                "682b2f9c-9436-4f3b-ab14-726806b3927a",
+                "81087988-edf9-40cd-8c04-79f6c9e7fc8c",
+                "095f2764-5763-49a7-b123-b30a42b2e1cf",
+                "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7",
+                "50891185-1486-4aa5-a345-3dfa516ae515"
+            ],
+            "reranked_chunk_ids": [
+                "682b2f9c-9436-4f3b-ab14-726806b3927a",
+                "81087988-edf9-40cd-8c04-79f6c9e7fc8c",
+                "095f2764-5763-49a7-b123-b30a42b2e1cf"
+            ],
+            "reranker_scores": [
+                10.715787887573242,
+                7.653059959411621,
+                3.3366293907165527
+            ],
+            "answer": "Based on the excerpts, voluntary response sampling is a type of non-probability sampling in which the researcher selects the sample from people who volunteer to participate in the study.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 49,
+                    "chunk_id": "682b2f9c-9436-4f3b-ab14-726806b3927a"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 50,
+                    "chunk_id": "81087988-edf9-40cd-8c04-79f6c9e7fc8c"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 46,
+                    "chunk_id": "095f2764-5763-49a7-b123-b30a42b2e1cf"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.01655120000941679,
+            "reranking_latency_seconds": 0.05857770000875462,
+            "generation_latency_seconds": 0.3687942000105977,
+            "total_latency_seconds": 0.4439380000112578,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": null,
+                "retrieval_recall_at_5": null,
+                "retrieval_mrr_at_5": null,
+                "reranking_precision_at_3": null,
+                "reranking_recall_at_3": null,
+                "reranking_mrr_at_3": null,
+                "reranking_ndcg_at_3": null
+            }
+        },
+        {
+            "id": "S10",
+            "question": "What does the Central Limit Theorem state?",
+            "expected_answer": "Independent random variables approach a normal distribution as the sample size increases, regardless of the underlying population distribution.",
+            "answerable": true,
+            "relevant_chunk_ids": [],
+            "retrieved_chunk_ids": [
+                "1602f9e4-a6ae-47c5-bf04-63b274687aa2",
+                "bcf62ae3-10d0-4149-8af3-3d3bd3f740bc",
+                "5be865f9-a510-4722-96e7-314d97b8acb5",
+                "3fd07e3f-9842-4edd-ae82-a2cd80c6cb1f",
+                "66d0c557-9ee5-4b6f-92c4-d931a4e33887"
+            ],
+            "reranked_chunk_ids": [
+                "bcf62ae3-10d0-4149-8af3-3d3bd3f740bc",
+                "1602f9e4-a6ae-47c5-bf04-63b274687aa2",
+                "3fd07e3f-9842-4edd-ae82-a2cd80c6cb1f"
+            ],
+            "reranker_scores": [
+                9.20903205871582,
+                4.228425979614258,
+                3.0593674182891846
+            ],
+            "answer": "The Central Limit Theorem states that independent random variables approach a normal distribution as the sample size increases, regardless of the underlying population distribution.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 67,
+                    "chunk_id": "bcf62ae3-10d0-4149-8af3-3d3bd3f740bc"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 66,
+                    "chunk_id": "1602f9e4-a6ae-47c5-bf04-63b274687aa2"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 84,
+                    "chunk_id": "3fd07e3f-9842-4edd-ae82-a2cd80c6cb1f"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieval_latency_seconds": 0.021813499988638796,
+            "reranking_latency_seconds": 0.0898903000052087,
+            "generation_latency_seconds": 0.2943319999903906,
+            "total_latency_seconds": 0.4060486999951536,
+            "status": "success",
+            "error": null,
+            "metrics": {
+                "retrieval_precision_at_5": null,
+                "retrieval_recall_at_5": null,
+                "retrieval_mrr_at_5": null,
+                "reranking_precision_at_3": null,
+                "reranking_recall_at_3": null,
+                "reranking_mrr_at_3": null,
+                "reranking_ndcg_at_3": null
+            }
+        }
+    ],
+    "average_metrics": {
+        "retrieval_precision_at_5": 0.14,
+        "retrieval_recall_at_5": 0.7,
+        "retrieval_mrr_at_5": 0.65,
+        "reranking_precision_at_3": 0.21666666666666665,
+        "reranking_recall_at_3": 0.65,
+        "reranking_mrr_at_3": 0.625,
+        "reranking_ndcg_at_3": 0.6315464876785729
+    }
+}

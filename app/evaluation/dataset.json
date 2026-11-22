@@ -1,0 +1,312 @@
+[
+  {
+    "id": "E01",
+    "question": "How many annual leave days does a full-time employee receive?",
+    "expected_answer": "20 days per calendar year.",
+    "document": "employee_policy_sample.pdf",
+    "category": "factual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+    ]
+  },
+  {
+    "id": "E02",
+    "question": "How many working days in advance should planned leave be requested?",
+    "expected_answer": "At least 5 working days.",
+    "document": "employee_policy_sample.pdf",
+    "category": "factual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+    ]
+  },
+  {
+    "id": "E03",
+    "question": "What happens to annual leave for employees who join during the year?",
+    "expected_answer": "Leave is prorated based on the employee's joining date.",
+    "document": "employee_policy_sample.pdf",
+    "category": "factual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+    ]
+  },
+  {
+    "id": "E04",
+    "question": "How many sick leave days are provided annually?",
+    "expected_answer": "10 days per calendar year.",
+    "document": "employee_policy_sample.pdf",
+    "category": "factual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+    ]
+  },
+  {
+    "id": "E05",
+    "question": "When is a medical certificate required for sick leave?",
+    "expected_answer": "When an employee is absent for more than two consecutive working days due to illness.",
+    "document": "employee_policy_sample.pdf",
+    "category": "factual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+    ]
+  },
+  {
+    "id": "E06",
+    "question": "What is the standard working schedule?",
+    "expected_answer": "Monday to Friday, 9:30 AM to 6:00 PM, with a one-hour lunch break.",
+    "document": "employee_policy_sample.pdf",
+    "category": "factual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+    ]
+  },
+  {
+    "id": "E07",
+    "question": "How many remote working days are allowed per week?",
+    "expected_answer": "Up to two days per week with prior manager approval.",
+    "document": "employee_policy_sample.pdf",
+    "category": "factual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+    ]
+  },
+  {
+    "id": "E08",
+    "question": "Who is the organization's CEO?",
+    "expected_answer": "This information is not specified in the handbook.",
+    "document": "employee_policy_sample.pdf",
+    "category": "unanswerable",
+    "answerable": false,
+    "relevant_chunk_ids": [
+      "b4120ee9-4184-4719-886a-882a4ffe4698"
+    ]
+  },
+  {
+    "id": "E09",
+    "question": "What are the employee salary bands?",
+    "expected_answer": "This information is not specified in the handbook.",
+    "document": "employee_policy_sample.pdf",
+    "category": "unanswerable",
+    "answerable": false,
+    "relevant_chunk_ids": [
+      "b4120ee9-4184-4719-886a-882a4ffe4698"
+    ]
+  },
+  {
+    "id": "E10",
+    "question": "What is the company's registered office address?",
+    "expected_answer": "This information is not specified in the handbook.",
+    "document": "employee_policy_sample.pdf",
+    "category": "unanswerable",
+    "answerable": false,
+    "relevant_chunk_ids": [
+      "b4120ee9-4184-4719-886a-882a4ffe4698"
+    ]
+  },
+  {
+    "id": "D01",
+    "question": "What is data according to the lesson?",
+    "expected_answer": "Data refers to facts and figures that researchers collect, analyze, and summarize for presentation and interpretation.",
+    "document": "Lesson_03_Understanding_the_Data.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "9e36b82f-a2ff-4e8a-9a36-1de0df847b33"
+    ]
+  },
+  {
+    "id": "D02",
+    "question": "What are the two main types of data?",
+    "expected_answer": "Qualitative and quantitative data.",
+    "document": "Lesson_03_Understanding_the_Data.pdf",
+    "category": "factual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "9e36b82f-a2ff-4e8a-9a36-1de0df847b33"
+    ]
+  },
+  {
+    "id": "D03",
+    "question": "What is quantitative data?",
+    "expected_answer": "Data specified numerically through a process of measurement or numerical count.",
+    "document": "Lesson_03_Understanding_the_Data.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "92829cc3-21a1-466e-8c66-7f74ed3ff5a8"
+    ]
+  },
+  {
+    "id": "D04",
+    "question": "What is primary data?",
+    "expected_answer": "Primary data refers specifically to data related to the problem under investigation.",
+    "document": "Lesson_03_Understanding_the_Data.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "2f305c7b-6cfc-4d08-af35-817ff031a1a9"
+    ]
+  },
+  {
+    "id": "D05",
+    "question": "What is secondary data?",
+    "expected_answer": "Data that someone else or another company has already collected and analyzed.",
+    "document": "Lesson_03_Understanding_the_Data.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8"
+    ]
+  },
+  {
+    "id": "D06",
+    "question": "What is structured data?",
+    "expected_answer": "Data recorded or stored in a predefined format for easy search and use during analysis.",
+    "document": "Lesson_03_Understanding_the_Data.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "19bd3da4-1e76-47ac-ba07-79a45b0ef7e9"
+    ]
+  },
+  {
+    "id": "D07",
+    "question": "Give examples of unstructured data mentioned in the lesson.",
+    "expected_answer": "Invoices, records, emails, and productivity applications.",
+    "document": "Lesson_03_Understanding_the_Data.pdf",
+    "category": "factual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "5602b16d-b4c6-4b2f-9fba-367d8a584bec"
+    ]
+  },
+  {
+    "id": "D08",
+    "question": "What is cross-sectional data?",
+    "expected_answer": "Data collected by observing numerous subjects at a specific point in time.",
+    "document": "Lesson_03_Understanding_the_Data.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "bccd7b8d-dc2d-4823-9fa8-c210544b0626"
+    ]
+  },
+  {
+    "id": "D09",
+    "question": "What is time-series data?",
+    "expected_answer": "Data collected over a period of time, such as annual sales of a specific commodity over several years.",
+    "document": "Lesson_03_Understanding_the_Data.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "6ba07510-01fa-489b-ac2d-172dc440fa8f"
+    ]
+  },
+  {
+    "id": "D10",
+    "question": "What is panel data?",
+    "expected_answer": "Panel data, also known as longitudinal data, is data collected over time from cross-sectional units.",
+    "document": "Lesson_03_Understanding_the_Data.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": [
+      "5cd380cc-2b64-4be6-a108-7b3b76cec5c9"
+    ]
+  },
+  {
+    "id": "S01",
+    "question": "What is sampling?",
+    "expected_answer": "Sampling is a statistical technique that involves performing a predetermined number of observations on a population.",
+    "document": "Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": []
+  },
+  {
+    "id": "S02",
+    "question": "What is simple random sampling?",
+    "expected_answer": "A technique of sample selection in which every sample has an equal probability of selection.",
+    "document": "Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": []
+  },
+  {
+    "id": "S03",
+    "question": "What is systematic sampling?",
+    "expected_answer": "A probability sampling technique in which researchers randomly select members of a population at regular intervals.",
+    "document": "Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": []
+  },
+  {
+    "id": "S04",
+    "question": "A population has 500 units and the required sample is 50. What is the sampling interval?",
+    "expected_answer": "The sampling interval is k = N/n = 500/50 = 10.",
+    "document": "Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+    "category": "numerical",
+    "answerable": true,
+    "relevant_chunk_ids": []
+  },
+  {
+    "id": "S05",
+    "question": "What is stratified random sampling?",
+    "expected_answer": "A sampling method that divides a population into smaller subgroups known as strata, from which random samples are drawn.",
+    "document": "Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": []
+  },
+  {
+    "id": "S06",
+    "question": "What is cluster sampling?",
+    "expected_answer": "A method in which the population is divided into clusters, a sample of clusters is selected, and all units from the selected clusters constitute the sample.",
+    "document": "Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": []
+  },
+  {
+    "id": "S07",
+    "question": "What are the four non-probability sampling methods?",
+    "expected_answer": "Convenience sampling, voluntary response sampling, snowball sampling, and judgmental or purposive sampling.",
+    "document": "Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+    "category": "factual",
+    "answerable": true,
+    "relevant_chunk_ids": []
+  },
+  {
+    "id": "S08",
+    "question": "What is convenience sampling?",
+    "expected_answer": "A type of non-probability sampling in which the researcher selects the sample based on convenience rather than random selection.",
+    "document": "Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": []
+  },
+  {
+    "id": "S09",
+    "question": "What is voluntary response sampling?",
+    "expected_answer": "A type of non-probability sampling in which participants volunteer to participate in the study.",
+    "document": "Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": []
+  },
+  {
+    "id": "S10",
+    "question": "What does the Central Limit Theorem state?",
+    "expected_answer": "Independent random variables approach a normal distribution as the sample size increases, regardless of the underlying population distribution.",
+    "document": "Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+    "category": "conceptual",
+    "answerable": true,
+    "relevant_chunk_ids": []
+  }
+]
