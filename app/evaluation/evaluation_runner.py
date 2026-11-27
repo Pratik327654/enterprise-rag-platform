@@ -157,6 +157,8 @@ def main():
         result = evaluate_question(pipeline, item)
         results.append(result)
 
+
+       
         print(
             f"[{index}/{len(dataset)}] "
             f"{result['id']}: {result['status'].upper()}"

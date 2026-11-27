@@ -1,0 +1,2250 @@
+{
+    "total_questions": 30,
+    "successful": 30,
+    "failed": 0,
+    "judge_model": "qwen2.5:3b",
+    "top_k": 5,
+    "top_n": 3,
+    "summary": {
+        "total_evaluations": 30,
+        "average_scores": {
+            "faithfulness": 0.9167,
+            "answer_relevancy": 0.8667,
+            "context_relevancy": 0.9,
+            "answer_correctness": 0.9667
+        },
+        "overall_score": 0.9125,
+        "pass_statistics": {
+            "threshold": 0.7,
+            "metric_pass_rates": {
+                "faithfulness": 0.9,
+                "answer_relevancy": 0.8333,
+                "context_relevancy": 0.9,
+                "answer_correctness": 0.9667
+            },
+            "overall_pass_rate": 0.8
+        }
+    },
+    "results": [
+        {
+            "id": "E01",
+            "question": "How many annual leave days does a full-time employee receive?",
+            "expected_answer": "20 days per calendar year.",
+            "answerable": true,
+            "generated_answer": "According to the excerpts, a full-time employee receives 20 days of annual leave per calendar year.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+            ],
+            "reranked_chunk_ids": [
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Page 1\n Employee Policy Handbook\nSample document for Enterprise RAG Platform testing\nDocument type: Internal HR policy sample\nVersion: 1.0\nEffective date: 1 January 2026\nDocument owner: Human Resources Department\n1. Annual Leave Policy\nFull-time employees receive 20 days of annual leave per calendar year. Annual leave is credited\nat the beginning of each calendar year. Employees who join during the year receive a prorated\nleave balance based on their joining date.\nEmployees must submit annual leave requests through the HR portal. Managers are responsible\nfor reviewing requests and approving or declining them based on team availability and business\nrequirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy"
+                },
+                {
+                    "text": "requirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy\nEmployees receive 10 days of sick leave per calendar year. If an employee is absent for more than\ntwo consecutive working days due to illness, the employee must provide a medical certificate to the\nHuman Resources Department.\n3. Work Schedule\nThe standard work schedule is Monday to Friday, from 9:30 AM to 6:00 PM. Employees are\nexpected to take a one-hour lunch break. Some teams may follow approved shift schedules based\non operational requirements."
+                },
+                {
+                    "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
+                }
+            ],
+            "generation_latency_seconds": 45.188078099999984,
+            "llm_evaluation_latency_seconds": 70.29574850000063,
+            "total_latency_seconds": 119.97277520000353,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly states the number of annual leave days, which is supported by the context."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about the number of annual leave days a full-time employee receives."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the information needed to answer the question about the number of annual leave days a full-time employee receives."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "E02",
+            "question": "How many working days in advance should planned leave be requested?",
+            "expected_answer": "At least 5 working days.",
+            "answerable": true,
+            "generated_answer": "According to the excerpts, employees should submit planned leave requests at least five working days in advance.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+            ],
+            "reranked_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "requirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy\nEmployees receive 10 days of sick leave per calendar year. If an employee is absent for more than\ntwo consecutive working days due to illness, the employee must provide a medical certificate to the\nHuman Resources Department.\n3. Work Schedule\nThe standard work schedule is Monday to Friday, from 9:30 AM to 6:00 PM. Employees are\nexpected to take a one-hour lunch break. Some teams may follow approved shift schedules based\non operational requirements."
+                },
+                {
+                    "text": "Page 1\n Employee Policy Handbook\nSample document for Enterprise RAG Platform testing\nDocument type: Internal HR policy sample\nVersion: 1.0\nEffective date: 1 January 2026\nDocument owner: Human Resources Department\n1. Annual Leave Policy\nFull-time employees receive 20 days of annual leave per calendar year. Annual leave is credited\nat the beginning of each calendar year. Employees who join during the year receive a prorated\nleave balance based on their joining date.\nEmployees must submit annual leave requests through the HR portal. Managers are responsible\nfor reviewing requests and approving or declining them based on team availability and business\nrequirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy"
+                },
+                {
+                    "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
+                }
+            ],
+            "generation_latency_seconds": 9.860681999998633,
+            "llm_evaluation_latency_seconds": 11.982227400003467,
+            "total_latency_seconds": 21.939707199999248,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context directly states 'Employees should submit planned leave requests at least five working days in advance.'"
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about the number of working days in advance for planned leave requests."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context contains the information needed to answer the question about the number of working days in advance for planned leave requests."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "E03",
+            "question": "What happens to annual leave for employees who join during the year?",
+            "expected_answer": "Leave is prorated based on the employee's joining date.",
+            "answerable": true,
+            "generated_answer": "According to the excerpts, employees who join during the year receive a prorated leave balance based on their joining date.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+            ],
+            "reranked_chunk_ids": [
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Page 1\n Employee Policy Handbook\nSample document for Enterprise RAG Platform testing\nDocument type: Internal HR policy sample\nVersion: 1.0\nEffective date: 1 January 2026\nDocument owner: Human Resources Department\n1. Annual Leave Policy\nFull-time employees receive 20 days of annual leave per calendar year. Annual leave is credited\nat the beginning of each calendar year. Employees who join during the year receive a prorated\nleave balance based on their joining date.\nEmployees must submit annual leave requests through the HR portal. Managers are responsible\nfor reviewing requests and approving or declining them based on team availability and business\nrequirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy"
+                },
+                {
+                    "text": "requirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy\nEmployees receive 10 days of sick leave per calendar year. If an employee is absent for more than\ntwo consecutive working days due to illness, the employee must provide a medical certificate to the\nHuman Resources Department.\n3. Work Schedule\nThe standard work schedule is Monday to Friday, from 9:30 AM to 6:00 PM. Employees are\nexpected to take a one-hour lunch break. Some teams may follow approved shift schedules based\non operational requirements."
+                },
+                {
+                    "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
+                }
+            ],
+            "generation_latency_seconds": 8.814565599997877,
+            "llm_evaluation_latency_seconds": 12.277123699997901,
+            "total_latency_seconds": 21.185887899999216,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context directly states 'Employees who join during the year receive a prorated leave balance based on their joining date.' which supports the generated answer."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about what happens to annual leave for employees who join during the year."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context contains the information needed to answer the question, specifically the relevant policy excerpt about prorated leave for new employees."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "E04",
+            "question": "How many sick leave days are provided annually?",
+            "expected_answer": "10 days per calendar year.",
+            "answerable": true,
+            "generated_answer": "According to the excerpts, employees receive 10 days of sick leave per calendar year.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "2270d1db-780e-4b7f-bb8a-a12d15af2de5",
+                "76416b5e-20be-4694-a577-94a3be45df48"
+            ],
+            "reranked_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "requirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy\nEmployees receive 10 days of sick leave per calendar year. If an employee is absent for more than\ntwo consecutive working days due to illness, the employee must provide a medical certificate to the\nHuman Resources Department.\n3. Work Schedule\nThe standard work schedule is Monday to Friday, from 9:30 AM to 6:00 PM. Employees are\nexpected to take a one-hour lunch break. Some teams may follow approved shift schedules based\non operational requirements."
+                },
+                {
+                    "text": "Page 1\n Employee Policy Handbook\nSample document for Enterprise RAG Platform testing\nDocument type: Internal HR policy sample\nVersion: 1.0\nEffective date: 1 January 2026\nDocument owner: Human Resources Department\n1. Annual Leave Policy\nFull-time employees receive 20 days of annual leave per calendar year. Annual leave is credited\nat the beginning of each calendar year. Employees who join during the year receive a prorated\nleave balance based on their joining date.\nEmployees must submit annual leave requests through the HR portal. Managers are responsible\nfor reviewing requests and approving or declining them based on team availability and business\nrequirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy"
+                },
+                {
+                    "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
+                }
+            ],
+            "generation_latency_seconds": 8.87654069999553,
+            "llm_evaluation_latency_seconds": 11.703020200002356,
+            "total_latency_seconds": 20.673500000004424,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context directly states that employees receive 10 days of sick leave per calendar year."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about the number of sick leave days provided annually."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context contains the information needed to answer the question about sick leave days."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "E05",
+            "question": "When is a medical certificate required for sick leave?",
+            "expected_answer": "When an employee is absent for more than two consecutive working days due to illness.",
+            "answerable": true,
+            "generated_answer": "According to the excerpts, a medical certificate is required for sick leave if an employee is absent for more than two consecutive working days due to illness.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "e8e82963-dac7-41e7-8a01-2482c8165d6b",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "reranked_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "requirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy\nEmployees receive 10 days of sick leave per calendar year. If an employee is absent for more than\ntwo consecutive working days due to illness, the employee must provide a medical certificate to the\nHuman Resources Department.\n3. Work Schedule\nThe standard work schedule is Monday to Friday, from 9:30 AM to 6:00 PM. Employees are\nexpected to take a one-hour lunch break. Some teams may follow approved shift schedules based\non operational requirements."
+                },
+                {
+                    "text": "Page 1\n Employee Policy Handbook\nSample document for Enterprise RAG Platform testing\nDocument type: Internal HR policy sample\nVersion: 1.0\nEffective date: 1 January 2026\nDocument owner: Human Resources Department\n1. Annual Leave Policy\nFull-time employees receive 20 days of annual leave per calendar year. Annual leave is credited\nat the beginning of each calendar year. Employees who join during the year receive a prorated\nleave balance based on their joining date.\nEmployees must submit annual leave requests through the HR portal. Managers are responsible\nfor reviewing requests and approving or declining them based on team availability and business\nrequirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy"
+                },
+                {
+                    "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
+                }
+            ],
+            "generation_latency_seconds": 9.970619600004284,
+            "llm_evaluation_latency_seconds": 12.940890999998373,
+            "total_latency_seconds": 23.00752189999912,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly states the condition for requiring a medical certificate, which is supported by the context."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about when a medical certificate is required for sick leave."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context contains the information needed to answer the question about the requirement for a medical certificate for sick leave."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "E06",
+            "question": "What is the standard working schedule?",
+            "expected_answer": "Monday to Friday, 9:30 AM to 6:00 PM, with a one-hour lunch break.",
+            "answerable": true,
+            "generated_answer": "The standard working schedule is Monday to Friday, from 9:30 AM to 6:00 PM.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "c605b15c-729a-4e30-868a-29faf834a391",
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce"
+            ],
+            "reranked_chunk_ids": [
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "requirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy\nEmployees receive 10 days of sick leave per calendar year. If an employee is absent for more than\ntwo consecutive working days due to illness, the employee must provide a medical certificate to the\nHuman Resources Department.\n3. Work Schedule\nThe standard work schedule is Monday to Friday, from 9:30 AM to 6:00 PM. Employees are\nexpected to take a one-hour lunch break. Some teams may follow approved shift schedules based\non operational requirements."
+                },
+                {
+                    "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
+                },
+                {
+                    "text": "Page 1\n Employee Policy Handbook\nSample document for Enterprise RAG Platform testing\nDocument type: Internal HR policy sample\nVersion: 1.0\nEffective date: 1 January 2026\nDocument owner: Human Resources Department\n1. Annual Leave Policy\nFull-time employees receive 20 days of annual leave per calendar year. Annual leave is credited\nat the beginning of each calendar year. Employees who join during the year receive a prorated\nleave balance based on their joining date.\nEmployees must submit annual leave requests through the HR portal. Managers are responsible\nfor reviewing requests and approving or declining them based on team availability and business\nrequirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy"
+                }
+            ],
+            "generation_latency_seconds": 9.976339100001496,
+            "llm_evaluation_latency_seconds": 13.61010809999425,
+            "total_latency_seconds": 23.664718100000755,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly states the standard work schedule, which is supported by the retrieved context."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about the standard working schedule."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the answer to the question about the standard working schedule."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "E07",
+            "question": "How many remote working days are allowed per week?",
+            "expected_answer": "Up to two days per week with prior manager approval.",
+            "answerable": true,
+            "generated_answer": "According to the excerpts, eligible employees may work remotely up to two days per week with prior manager approval.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "94d9148c-91ca-4e1f-bb46-632a68e94bd2"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 1,
+                    "chunk_id": "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "c605b15c-729a-4e30-868a-29faf834a391",
+                "a6ffd757-782c-4632-a4f2-d70c29dd2b50"
+            ],
+            "reranked_chunk_ids": [
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "94d9148c-91ca-4e1f-bb46-632a68e94bd2",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
+                },
+                {
+                    "text": "requirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy\nEmployees receive 10 days of sick leave per calendar year. If an employee is absent for more than\ntwo consecutive working days due to illness, the employee must provide a medical certificate to the\nHuman Resources Department.\n3. Work Schedule\nThe standard work schedule is Monday to Friday, from 9:30 AM to 6:00 PM. Employees are\nexpected to take a one-hour lunch break. Some teams may follow approved shift schedules based\non operational requirements."
+                },
+                {
+                    "text": "Page 1\n Employee Policy Handbook\nSample document for Enterprise RAG Platform testing\nDocument type: Internal HR policy sample\nVersion: 1.0\nEffective date: 1 January 2026\nDocument owner: Human Resources Department\n1. Annual Leave Policy\nFull-time employees receive 20 days of annual leave per calendar year. Annual leave is credited\nat the beginning of each calendar year. Employees who join during the year receive a prorated\nleave balance based on their joining date.\nEmployees must submit annual leave requests through the HR portal. Managers are responsible\nfor reviewing requests and approving or declining them based on team availability and business\nrequirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy"
+                }
+            ],
+            "generation_latency_seconds": 9.971896100003505,
+            "llm_evaluation_latency_seconds": 12.931260500001372,
+            "total_latency_seconds": 22.977647100000468,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context directly states 'Eligible employees may work remotely up to two days per week with prior manager approval.' which matches the generated answer."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about the number of remote working days allowed per week."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the answer to the user's question about the number of remote working days allowed per week."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "E08",
+            "question": "Who is the organization's CEO?",
+            "expected_answer": "This information is not specified in the handbook.",
+            "answerable": false,
+            "generated_answer": "The organization's CEO is not specified in the excerpts.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "3e0be8f1-2e53-4945-bda4-240f27f1bcce"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 5,
+                    "chunk_id": "060d44bc-7b79-489a-89a8-22524a0c1f81"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "060d44bc-7b79-489a-89a8-22524a0c1f81",
+                "ea08db7e-4cfe-4eda-99e8-46a5ecc9f100",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8",
+                "01379077-b514-40d4-8ee2-1fc31fddf681"
+            ],
+            "reranked_chunk_ids": [
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "060d44bc-7b79-489a-89a8-22524a0c1f81",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "reimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30\ncalendar days of the transaction. Original receipts or valid digital invoices must be attached to each\nclaim. The Finance Department reviews submitted claims according to the reimbursement policy.\n7. Information Not Specified in This Handbook\nThis sample handbook does not identify the organization's Chief Executive Officer (CEO), provide\nemployee salary bands, or specify the company's registered office address. These details are\nintentionally omitted so that retrieval and missing-information behaviour can be tested.\nEnd of sample document. This is fictional test content created for software development and RAG evaluation. It is not an"
+                },
+                {
+                    "text": "ABC is a healthcare organization managing hospitals, colleges, clinics, and \nmedicines. It generates a vast amount of data daily, encompassing patients, \nmedicines, and students.\nHowever, ABC encounters issues due to improper data management and \nineffective use of information. The organization aims to address those issues to \nbetter understand their customers and leverage this knowledge to improve \nservices and boost revenue. For instance, timely delivery of a patient's medicines \nwill not only elevate the customer experience but also increase the organization's \nrevenue.\nTo achieve this goal, ABC will explore various data types and their storage \nmethods.\nBusiness Scenario"
+                },
+                {
+                    "text": "End of sample document. This is fictional test content created for software development and RAG evaluation. It is not an\nactual company's HR policy."
+                }
+            ],
+            "generation_latency_seconds": 9.265496499996516,
+            "llm_evaluation_latency_seconds": 12.693496200001391,
+            "total_latency_seconds": 22.048764300001494,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 0.0,
+                    "reason": "The context does not contain any information about the organization's CEO."
+                },
+                "answer_relevancy": {
+                    "score": 0.0,
+                    "reason": "The generated answer does not directly address the user's question about the organization's CEO."
+                },
+                "context_relevancy": {
+                    "score": 0.0,
+                    "reason": "The context does not contain any information about the organization's CEO."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "E09",
+            "question": "What are the employee salary bands?",
+            "expected_answer": "This information is not specified in the handbook.",
+            "answerable": false,
+            "generated_answer": "Based on the excerpts, the employee salary bands are not specified.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "3e0be8f1-2e53-4945-bda4-240f27f1bcce"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "823eefb8-44b3-4c9e-8001-747b17f88cf9"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 36,
+                    "chunk_id": "ea08db7e-4cfe-4eda-99e8-46a5ecc9f100"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "4bff4ba3-831e-4555-8c9b-70ced4d99dd9",
+                "397fb5b5-11c7-4385-ab8d-b2d0a421c40c",
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "ea08db7e-4cfe-4eda-99e8-46a5ecc9f100"
+            ],
+            "reranked_chunk_ids": [
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "823eefb8-44b3-4c9e-8001-747b17f88cf9",
+                "ea08db7e-4cfe-4eda-99e8-46a5ecc9f100"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "reimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30\ncalendar days of the transaction. Original receipts or valid digital invoices must be attached to each\nclaim. The Finance Department reviews submitted claims according to the reimbursement policy.\n7. Information Not Specified in This Handbook\nThis sample handbook does not identify the organization's Chief Executive Officer (CEO), provide\nemployee salary bands, or specify the company's registered office address. These details are\nintentionally omitted so that retrieval and missing-information behaviour can be tested.\nEnd of sample document. This is fictional test content created for software development and RAG evaluation. It is not an"
+                },
+                {
+                    "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
+                },
+                {
+                    "text": "Stratified Random Sampling: Example \nAn employee satisfaction survey is being conducted in a large company.\nThe employees’ opinions could vary at different levels in the hierarchy and in different functions, like:\nSales\nAccounting\nMarketing\nHuman resources"
+                }
+            ],
+            "generation_latency_seconds": 8.735175800000434,
+            "llm_evaluation_latency_seconds": 11.730360499997914,
+            "total_latency_seconds": 20.554712500001187,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context explicitly states that employee salary bands are not specified in the handbook."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about employee salary bands."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the answer to the question about employee salary bands."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "E10",
+            "question": "What is the company's registered office address?",
+            "expected_answer": "This information is not specified in the handbook.",
+            "answerable": false,
+            "generated_answer": "The company's registered office address is not specified in the excerpts.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "3e0be8f1-2e53-4945-bda4-240f27f1bcce"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 5,
+                    "chunk_id": "060d44bc-7b79-489a-89a8-22524a0c1f81"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "cd571f0a5779485d95e6b4443caa103b_employee_policy_sample.pdf",
+                    "page_number": 2,
+                    "chunk_id": "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8",
+                "060d44bc-7b79-489a-89a8-22524a0c1f81",
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "92a6bd40-819f-4e7b-ab69-d1a13dcf88d5",
+                "4bff4ba3-831e-4555-8c9b-70ced4d99dd9"
+            ],
+            "reranked_chunk_ids": [
+                "3e0be8f1-2e53-4945-bda4-240f27f1bcce",
+                "060d44bc-7b79-489a-89a8-22524a0c1f81",
+                "6bc6b22b-8e61-401a-bc19-4a1c10c5ecf8"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "reimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30\ncalendar days of the transaction. Original receipts or valid digital invoices must be attached to each\nclaim. The Finance Department reviews submitted claims according to the reimbursement policy.\n7. Information Not Specified in This Handbook\nThis sample handbook does not identify the organization's Chief Executive Officer (CEO), provide\nemployee salary bands, or specify the company's registered office address. These details are\nintentionally omitted so that retrieval and missing-information behaviour can be tested.\nEnd of sample document. This is fictional test content created for software development and RAG evaluation. It is not an"
+                },
+                {
+                    "text": "ABC is a healthcare organization managing hospitals, colleges, clinics, and \nmedicines. It generates a vast amount of data daily, encompassing patients, \nmedicines, and students.\nHowever, ABC encounters issues due to improper data management and \nineffective use of information. The organization aims to address those issues to \nbetter understand their customers and leverage this knowledge to improve \nservices and boost revenue. For instance, timely delivery of a patient's medicines \nwill not only elevate the customer experience but also increase the organization's \nrevenue.\nTo achieve this goal, ABC will explore various data types and their storage \nmethods.\nBusiness Scenario"
+                },
+                {
+                    "text": "End of sample document. This is fictional test content created for software development and RAG evaluation. It is not an\nactual company's HR policy."
+                }
+            ],
+            "generation_latency_seconds": 10.177549600004568,
+            "llm_evaluation_latency_seconds": 11.886116099994979,
+            "total_latency_seconds": 22.141933699997026,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 0.0,
+                    "reason": "The context explicitly states that the company's registered office address is not specified in the handbook."
+                },
+                "answer_relevancy": {
+                    "score": 0.0,
+                    "reason": "The generated answer does not directly address the user's question about the company's registered office address."
+                },
+                "context_relevancy": {
+                    "score": 0.0,
+                    "reason": "The context does not contain the information needed to answer the question about the company's registered office address."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "D01",
+            "question": "What is data according to the lesson?",
+            "expected_answer": "Data refers to facts and figures that researchers collect, analyze, and summarize for presentation and interpretation.",
+            "answerable": true,
+            "generated_answer": "According to the excerpts, data is the foundational information used to produce statistics.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 3,
+                    "chunk_id": "8c414d1e-f3aa-480c-b34b-0fead2e042cf"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 10,
+                    "chunk_id": "bdd2a29c-ee70-489d-8314-765dc1ea4635"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 21,
+                    "chunk_id": "bb812949-b84c-4d7d-92e1-9c2ab6787087"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "3b15da1f-b408-4e80-83aa-5bdfd82a6ae4",
+                "bdd2a29c-ee70-489d-8314-765dc1ea4635",
+                "8c414d1e-f3aa-480c-b34b-0fead2e042cf",
+                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
+                "bb812949-b84c-4d7d-92e1-9c2ab6787087"
+            ],
+            "reranked_chunk_ids": [
+                "8c414d1e-f3aa-480c-b34b-0fead2e042cf",
+                "bdd2a29c-ee70-489d-8314-765dc1ea4635",
+                "bb812949-b84c-4d7d-92e1-9c2ab6787087"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Learning Objectives\nBy the end of this lesson, you will be able to:\nExplore different types of data\nCategorize data from a statistical perspective\nDistinguish among raw data, processed data, and primary and \nsecondary data"
+                },
+                {
+                    "text": "Data\n• It is the foundational information used to produce \nstatistics.\n• The data collected or compiled for a statistical \ninvestigation is referred to as a dataset.\nData consists of facts and figures collected, analyzed, and summarized for \npresentation and interpretation."
+                },
+                {
+                    "text": "Determining the Type of Data to Be Used\nExamples:\nDiameter of wires\n• Inspected using a go or no-\ngo gauge\n• Categorized as within or \noutside specification limits\n• Qualitative data is directly \ncollected\n• Data collection process is \nsimplified\nScores of students\n• Classified into grades, \nsuch as Grade A, Grade \nB, Grade C, and Grade F\n• Quantitative data is \ncollected initially\n• Data collected is \ncategorized into classes"
+                }
+            ],
+            "generation_latency_seconds": 8.934744699996372,
+            "llm_evaluation_latency_seconds": 13.641089800003101,
+            "total_latency_seconds": 22.646375199998147,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer correctly states that data is the foundational information used to produce statistics, which is directly supported by Context 1 and Context 2."
+                },
+                "answer_relevancy": {
+                    "score": 0.5,
+                    "reason": "The generated answer addresses the question but does not fully match the expected answer, which states that data refers to facts and figures that researchers collect, analyze, and summarize for presentation and interpretation."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "Context 1, Context 2, and Context 3 all contain information about what data is and how it is used, making the context relevant to the question."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer in meaning, even though it does not use the exact wording."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "D02",
+            "question": "What are the two main types of data?",
+            "expected_answer": "Qualitative and quantitative data.",
+            "answerable": true,
+            "generated_answer": "Based on the document excerpts, the two main types of data are:\n\n1. Structured data (referred to as \"data recorded or stored in a predefined format for easy search and use during analysis\")\n2. Unstructured data (referred to as \"data not recorded in a predefined format, such as document collection through invoices, records, emails, and productivity applications\")",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 55,
+                    "chunk_id": "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 35,
+                    "chunk_id": "701f5952-e6ed-4542-b1d7-2e3887cbdc6b"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 6,
+                    "chunk_id": "e09442ff-9a8b-42d7-9c50-76d748369403"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
+                "e09442ff-9a8b-42d7-9c50-76d748369403",
+                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7",
+                "41655fd7-3822-496b-baaf-5c48faee0d28",
+                "ad93545b-1d63-4fa8-ac06-cb5a9bd59c2e"
+            ],
+            "reranked_chunk_ids": [
+                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7",
+                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
+                "e09442ff-9a8b-42d7-9c50-76d748369403"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Types of Data\nWhat are the different types of data?\n• Give an example of structured data.\nAnswer: Data recorded or stored in a predefined format for easy search and \nuse during analysis is referred to as structured data. An example of this is the \ncollection of stock at the end of a month.\n• Give an example of unstructured data.\nAnswer: When data is not recorded in a predefined format, it is referred to as \nunstructured data. An example of this is document collection through \ninvoices, records, emails, and productivity applications.\nDuration: 15 minutes"
+                },
+                {
+                    "text": "Types of Data"
+                },
+                {
+                    "text": "Types of Data in Business Contexts"
+                }
+            ],
+            "generation_latency_seconds": 9.702329800005828,
+            "llm_evaluation_latency_seconds": 11.924860400002217,
+            "total_latency_seconds": 21.717095100000734,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 0.5,
+                    "reason": "The context mentions 'structured data' and 'unstructured data', but does not explicitly state 'two main types of data'."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about the two main types of data."
+                },
+                "context_relevancy": {
+                    "score": 0.0,
+                    "reason": "The context does not directly answer the question about the two main types of data."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "D03",
+            "question": "What is quantitative data?",
+            "expected_answer": "Data specified numerically through a process of measurement or numerical count.",
+            "answerable": true,
+            "generated_answer": "Based on the document excerpts, quantitative data is defined as data that is specified numerically through a process of measurement or numerical count.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 20,
+                    "chunk_id": "92829cc3-21a1-466e-8c66-7f74ed3ff5a8"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 19,
+                    "chunk_id": "aef925fe-cf60-456f-a388-fb1204679c32"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 22,
+                    "chunk_id": "563910eb-5320-404f-baaa-3682239f61ac"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "92829cc3-21a1-466e-8c66-7f74ed3ff5a8",
+                "bdd2a29c-ee70-489d-8314-765dc1ea4635",
+                "aef925fe-cf60-456f-a388-fb1204679c32",
+                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
+                "563910eb-5320-404f-baaa-3682239f61ac"
+            ],
+            "reranked_chunk_ids": [
+                "92829cc3-21a1-466e-8c66-7f74ed3ff5a8",
+                "aef925fe-cf60-456f-a388-fb1204679c32",
+                "563910eb-5320-404f-baaa-3682239f61ac"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Data that is specified numerically through a process of measurement or numerical count is \ncalled quantitative data.\nQuantitative, Variable, or Measurable Data\nExamples of quantitative data:\nDiameter of a wire Number of rooms occupied in a hotel"
+                },
+                {
+                    "text": "Qualitative, Attributed, or Categorical Data\nWhen data cannot be quantified, it is expressed descriptively. This is called qualitative data.\nExamples of qualitative data:\nCustomer preferences for \nvarious brands \nTypes of faults a player \nmakes in tennis"
+                },
+                {
+                    "text": "Data Used in Businesses\nHow can data analysis assist in growing a business?\n• What is data?\nAnswer: Data is facts and figures that are collected, analyzed, and \nsummarized for presentation and interpretation. The data collected or \ncompiled for a statistical investigation is referred to as a dataset.\n• What are the types of data?\nAnswer: The types of data include:\n• Qualitative, attributed, or categorical data\n• Quantitative, variable, or measurable data\nDuration: 15 minutes"
+                }
+            ],
+            "generation_latency_seconds": 8.754167299994151,
+            "llm_evaluation_latency_seconds": 12.921403000000282,
+            "total_latency_seconds": 21.753325699995912,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly states that quantitative data is 'data that is specified numerically through a process of measurement or numerical count', which is explicitly supported by the context."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about what quantitative data is."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the answer to the question about what quantitative data is."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "D04",
+            "question": "What is primary data?",
+            "expected_answer": "Primary data refers specifically to data related to the problem under investigation.",
+            "answerable": true,
+            "generated_answer": "Based on the excerpts, primary data refers specifically to the data related to the problem under investigation, as stated in source reference [S1].",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 32,
+                    "chunk_id": "2f305c7b-6cfc-4d08-af35-817ff031a1a9"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 33,
+                    "chunk_id": "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 31,
+                    "chunk_id": "d495e199-c157-48d5-b731-d36e3b51291a"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "2f305c7b-6cfc-4d08-af35-817ff031a1a9",
+                "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8",
+                "d495e199-c157-48d5-b731-d36e3b51291a",
+                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
+                "bdd2a29c-ee70-489d-8314-765dc1ea4635"
+            ],
+            "reranked_chunk_ids": [
+                "2f305c7b-6cfc-4d08-af35-817ff031a1a9",
+                "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8",
+                "d495e199-c157-48d5-b731-d36e3b51291a"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Primary Data\nPrimary data refers specifically to the data related to the problem under investigation.\nThe United States Census Bureau collects, analyzes, and provides data about the country’s people \nand economy. This example illustrates the use of primary data."
+                },
+                {
+                    "text": "Secondary Data\nData that someone else or another company has already collected and analyzed is referred \nto as secondary data.\nIt can be found in a variety of sources, such as government publications, academic journals, \nand commercial databases.\nSecondary data is often used to \nsupplement primary data."
+                },
+                {
+                    "text": "Data Collection\nSources of statistical data can be broadly categorized into:\nData collection plays an important role in statistical analysis. \nSecondary data\nPrimary data"
+                }
+            ],
+            "generation_latency_seconds": 8.76164869999775,
+            "llm_evaluation_latency_seconds": 11.816644999998971,
+            "total_latency_seconds": 20.63499089999823,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly quotes the definition of primary data from Context 1, which is fully supported by the context."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about what primary data is."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "Context 1 explicitly contains the definition of primary data, which is needed to answer the question."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "D05",
+            "question": "What is secondary data?",
+            "expected_answer": "Data that someone else or another company has already collected and analyzed.",
+            "answerable": true,
+            "generated_answer": "Based on the excerpts, secondary data refers to data that someone else or another company has already collected and analyzed, which can be found in various sources such as government publications, academic journals, and commercial databases.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 33,
+                    "chunk_id": "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 32,
+                    "chunk_id": "2f305c7b-6cfc-4d08-af35-817ff031a1a9"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 31,
+                    "chunk_id": "d495e199-c157-48d5-b731-d36e3b51291a"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8",
+                "2f305c7b-6cfc-4d08-af35-817ff031a1a9",
+                "d495e199-c157-48d5-b731-d36e3b51291a",
+                "3b15da1f-b408-4e80-83aa-5bdfd82a6ae4",
+                "23648583-6efc-4fbe-b1ef-798b5bdab987"
+            ],
+            "reranked_chunk_ids": [
+                "36dc6a7b-0b93-4bbe-bf30-1c7cad1f9bd8",
+                "2f305c7b-6cfc-4d08-af35-817ff031a1a9",
+                "d495e199-c157-48d5-b731-d36e3b51291a"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Secondary Data\nData that someone else or another company has already collected and analyzed is referred \nto as secondary data.\nIt can be found in a variety of sources, such as government publications, academic journals, \nand commercial databases.\nSecondary data is often used to \nsupplement primary data."
+                },
+                {
+                    "text": "Primary Data\nPrimary data refers specifically to the data related to the problem under investigation.\nThe United States Census Bureau collects, analyzes, and provides data about the country’s people \nand economy. This example illustrates the use of primary data."
+                },
+                {
+                    "text": "Data Collection\nSources of statistical data can be broadly categorized into:\nData collection plays an important role in statistical analysis. \nSecondary data\nPrimary data"
+                }
+            ],
+            "generation_latency_seconds": 9.605188100002124,
+            "llm_evaluation_latency_seconds": 12.381440199998906,
+            "total_latency_seconds": 22.042839299996558,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly quotes the definition of secondary data from the context."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about what secondary data is."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the answer to the question about secondary data."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "D06",
+            "question": "What is structured data?",
+            "expected_answer": "Data recorded or stored in a predefined format for easy search and use during analysis.",
+            "answerable": true,
+            "generated_answer": "Based on the excerpts, structured data is data recorded or stored in a predefined format for easy search and use during analysis, such as the collection of stock at the end of a month.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 48,
+                    "chunk_id": "19db3da4-1e76-47ac-ba07-79a45b0ef7e9"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 55,
+                    "chunk_id": "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 54,
+                    "chunk_id": "67b0503f-0b14-40cf-9005-b58b1033df94"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "19db3da4-1e76-47ac-ba07-79a45b0ef7e9",
+                "c582004f-4374-4750-87bb-4756bfadfe5a",
+                "0b99cba6-d395-4713-b4cd-05578c4c569d",
+                "67b0503f-0b14-40cf-9005-b58b1033df94",
+                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7"
+            ],
+            "reranked_chunk_ids": [
+                "19db3da4-1e76-47ac-ba07-79a45b0ef7e9",
+                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7",
+                "67b0503f-0b14-40cf-9005-b58b1033df94"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Structured Data\nData recorded or stored in a predefined format for easy search and use during analysis is \nreferred to as structured data. \nRow\nColumn\nExample: Data entered in Excel becomes structured when specific rows and columns \ncorrelate to certain characteristics."
+                },
+                {
+                    "text": "Types of Data\nWhat are the different types of data?\n• Give an example of structured data.\nAnswer: Data recorded or stored in a predefined format for easy search and \nuse during analysis is referred to as structured data. An example of this is the \ncollection of stock at the end of a month.\n• Give an example of unstructured data.\nAnswer: When data is not recorded in a predefined format, it is referred to as \nunstructured data. An example of this is document collection through \ninvoices, records, emails, and productivity applications.\nDuration: 15 minutes"
+                },
+                {
+                    "text": "Structured vs. Unstructured Data\n• In structured data, statistical measures \nsuch as mean, median, mode, and \nstandard deviation can be directly \ncalculated.\n• Structured data facilitates easy \nsearching and objective analysis.\n• In unstructured data, statistical \ntechniques may be applied indirectly, \nsuch as analyzing aggregated metrics \nor patterns.\n• Despite its complexity, unstructured \ndata can still yield useful information. \nStructured data Unstructured data \nTherefore, both types of data are useful."
+                }
+            ],
+            "generation_latency_seconds": 9.624239400000079,
+            "llm_evaluation_latency_seconds": 11.732748900001752,
+            "total_latency_seconds": 21.448838300006173,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly quotes the definition of structured data from the retrieved context."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about what structured data is."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the answer to the question about what structured data is."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "D07",
+            "question": "Give examples of unstructured data mentioned in the lesson.",
+            "expected_answer": "Invoices, records, emails, and productivity applications.",
+            "answerable": true,
+            "generated_answer": "Based on the document excerpts, examples of unstructured data mentioned are:\n\nDocument collection through invoices, records, emails, and productivity applications.\n\nSource reference: [S1] Types of Data",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 55,
+                    "chunk_id": "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 46,
+                    "chunk_id": "0b99cba6-d395-4713-b4cd-05578c4c569d"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 4,
+                    "chunk_id": "02703669-c883-49db-9fe7-9038187a179f"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "0b99cba6-d395-4713-b4cd-05578c4c569d",
+                "5602b16d-b4c6-4b2f-9fba-367d8a584bec",
+                "c582004f-4374-4750-87bb-4756bfadfe5a",
+                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7",
+                "02703669-c883-49db-9fe7-9038187a179f"
+            ],
+            "reranked_chunk_ids": [
+                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7",
+                "0b99cba6-d395-4713-b4cd-05578c4c569d",
+                "02703669-c883-49db-9fe7-9038187a179f"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Types of Data\nWhat are the different types of data?\n• Give an example of structured data.\nAnswer: Data recorded or stored in a predefined format for easy search and \nuse during analysis is referred to as structured data. An example of this is the \ncollection of stock at the end of a month.\n• Give an example of unstructured data.\nAnswer: When data is not recorded in a predefined format, it is referred to as \nunstructured data. An example of this is document collection through \ninvoices, records, emails, and productivity applications.\nDuration: 15 minutes"
+                },
+                {
+                    "text": "Structured vs. Unstructured Data\nWhat are the other types of data?\n• Give an example of structured data\n• Give an example of unstructured data\nDuration: 15 minutes"
+                },
+                {
+                    "text": "Learning Objectives\nBy the end of this lesson, you will be able to:\nIdentify the difference between structured and unstructured data\nUnderstand the importance of data quality\nDifferentiate among cross-sectional, time series, pooled, and panel \ndata"
+                }
+            ],
+            "generation_latency_seconds": 8.862233300002117,
+            "llm_evaluation_latency_seconds": 11.59137809999811,
+            "total_latency_seconds": 20.539237299999513,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly quotes the context's example of unstructured data."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about examples of unstructured data."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the answer to the user's question about examples of unstructured data."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "D08",
+            "question": "What is cross-sectional data?",
+            "expected_answer": "Data collected by observing numerous subjects at a specific point in time.",
+            "answerable": true,
+            "generated_answer": "Based on the excerpts, the correct answer is:\n\nB. Individuals\n\nThe excerpts state that cross-sectional data refers to data collected by observing numerous subjects, such as individuals.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 39,
+                    "chunk_id": "bccd7b8d-dc2d-4823-9fa8-c210544b0626"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 43,
+                    "chunk_id": "21896275-47d9-494c-9c96-785b7751b0df"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 76,
+                    "chunk_id": "c4d74d6d-78fc-442b-930c-57274fbfb5b3"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "bccd7b8d-dc2d-4823-9fa8-c210544b0626",
+                "c4d74d6d-78fc-442b-930c-57274fbfb5b3",
+                "9e36b82f-a2ff-48e6-9a36-1de0df847b33",
+                "410f5092-0be8-44b7-ab7a-54972e5bb21b",
+                "21896275-47d9-494c-9c96-785b7751b0df"
+            ],
+            "reranked_chunk_ids": [
+                "bccd7b8d-dc2d-4823-9fa8-c210544b0626",
+                "21896275-47d9-494c-9c96-785b7751b0df",
+                "c4d74d6d-78fc-442b-930c-57274fbfb5b3"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Cross-Sectional Data\nCross-sectional data pertains to data collected by observing numerous subjects at a specific \npoint in time, such as:\nIndividuals\nLocalities in a city\nFamilies\nMachines in a factory"
+                },
+                {
+                    "text": "Different Types of Data\nYou are assessing data from a specific location containing personal and \nfinancial information, like the spending habits of families in a large city.\nWhat type of data are you analyzing?\nAnswer: This is the cross-sectional data for a certain time period. Cross-\nsectional data refers to data collected by observing numerous subjects such \nas individuals, families, factory machines, or city localities over a specific time \nperiod. \nDuration: 15 minutes"
+                },
+                {
+                    "text": "The correct answer is\nKnowledge \nCheck\nD.\nC.\nB.\nA.\nA\nCross-sectional data refers to the data collected through the observation of numerous subjects.\nPooled data\nPanel data\nTime series data\nCross-sectional data\n1\nWhich of the following refers to the data collected through the observation of \nnumerous subjects?"
+                }
+            ],
+            "generation_latency_seconds": 8.862924300003215,
+            "llm_evaluation_latency_seconds": 13.20491540000512,
+            "total_latency_seconds": 22.12411229999998,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context directly states that cross-sectional data refers to data collected by observing numerous subjects such as individuals, families, localities, or machines in a factory."
+                },
+                "answer_relevancy": {
+                    "score": 0.5,
+                    "reason": "The generated answer does not directly address the user's question about what cross-sectional data is, but rather provides a partial definition of cross-sectional data."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the answer to the user's question about what cross-sectional data is."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "D09",
+            "question": "What is time-series data?",
+            "expected_answer": "Data collected over a period of time, such as annual sales of a specific commodity over several years.",
+            "answerable": true,
+            "generated_answer": "Based on the excerpts, the correct answer is:\n\nB. Time series data\n\nSource reference: Document excerpts.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 41,
+                    "chunk_id": "6ba07510-01fa-489b-ac2d-172dc440fa8f"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 77,
+                    "chunk_id": "adc77626-2730-4533-9f58-d43cd3efa589"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 22,
+                    "chunk_id": "563910eb-5320-404f-baaa-3682239f61ac"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "6ba07510-01fa-489b-ac2d-172dc440fa8f",
+                "adc77626-2730-4533-9f58-d43cd3efa589",
+                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
+                "563910eb-5320-404f-baaa-3682239f61ac",
+                "bdd2a29c-ee70-489d-8314-765dc1ea4635"
+            ],
+            "reranked_chunk_ids": [
+                "6ba07510-01fa-489b-ac2d-172dc440fa8f",
+                "adc77626-2730-4533-9f58-d43cd3efa589",
+                "563910eb-5320-404f-baaa-3682239f61ac"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Time Series Data\nTime series data refers to data collected over a period of time. \nExample: Data on the annual sales of a specific commodity over several years"
+                },
+                {
+                    "text": "Knowledge \nCheck\nA.\nB.\nC.\nD.\nCross-sectional data\nTime series data\nPanel data\nPooled data\nWhich of the following refers to data collected over a period of time? \n2"
+                },
+                {
+                    "text": "Data Used in Businesses\nHow can data analysis assist in growing a business?\n• What is data?\nAnswer: Data is facts and figures that are collected, analyzed, and \nsummarized for presentation and interpretation. The data collected or \ncompiled for a statistical investigation is referred to as a dataset.\n• What are the types of data?\nAnswer: The types of data include:\n• Qualitative, attributed, or categorical data\n• Quantitative, variable, or measurable data\nDuration: 15 minutes"
+                }
+            ],
+            "generation_latency_seconds": 9.846519400001853,
+            "llm_evaluation_latency_seconds": 12.637105000001611,
+            "total_latency_seconds": 22.547464299997955,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context directly states 'Time series data refers to data collected over a period of time.' and provides an example of annual sales data."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about what time-series data is."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context contains the information needed to answer the question about time-series data."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "D10",
+            "question": "What is panel data?",
+            "expected_answer": "Panel data, also known as longitudinal data, is data collected over time from cross-sectional units.",
+            "answerable": true,
+            "generated_answer": "Based on the excerpts, the correct answer is:\n\nB. Cross-sectional data\n\nSource reference: Document excerpts.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 42,
+                    "chunk_id": "5cd380cc-2b64-4be6-a108-7b3b76cec5c9"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 76,
+                    "chunk_id": "c4d74d6d-78fc-442b-930c-57274fbfb5b3"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
+                    "page_number": 75,
+                    "chunk_id": "0fb9b24d-89fd-4dc5-82c6-90b8b015081f"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "5cd380cc-2b64-4be6-a108-7b3b76cec5c9",
+                "adc77626-2730-4533-9f58-d43cd3efa589",
+                "0fb9b24d-89fd-4dc5-82c6-90b8b015081f",
+                "410f5092-0be8-44b7-ab7a-54972e5bb21b",
+                "c4d74d6d-78fc-442b-930c-57274fbfb5b3"
+            ],
+            "reranked_chunk_ids": [
+                "5cd380cc-2b64-4be6-a108-7b3b76cec5c9",
+                "c4d74d6d-78fc-442b-930c-57274fbfb5b3",
+                "0fb9b24d-89fd-4dc5-82c6-90b8b015081f"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Panel or Longitudinal Data\nPanel data, also known as longitudinal data, encompasses data collected over time from \ncross-sectional units.\nWhen the yearly sales of a commodity over several years are collected from numerous retail \noutlets, the data would constitute cross-sectional time series data or panel data."
+                },
+                {
+                    "text": "The correct answer is\nKnowledge \nCheck\nD.\nC.\nB.\nA.\nA\nCross-sectional data refers to the data collected through the observation of numerous subjects.\nPooled data\nPanel data\nTime series data\nCross-sectional data\n1\nWhich of the following refers to the data collected through the observation of \nnumerous subjects?"
+                },
+                {
+                    "text": "Knowledge \nCheck\nA.\nB.\nC.\nD.\nCross-sectional data\nTime series data\nPanel data\nPooled data\nWhich of the following refers to the data collected through the observation of \nnumerous subjects? 1"
+                }
+            ],
+            "generation_latency_seconds": 9.616108900001564,
+            "llm_evaluation_latency_seconds": 11.864717900003598,
+            "total_latency_seconds": 21.53079440000147,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context directly supports the statement that panel data is 'data collected over time from cross-sectional units.'"
+                },
+                "answer_relevancy": {
+                    "score": 0.0,
+                    "reason": "The generated answer does not address the question 'What is panel data?'"
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the definition of panel data."
+                },
+                "answer_correctness": {
+                    "score": 0.0,
+                    "reason": "The generated answer does not match the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "S01",
+            "question": "What is sampling?",
+            "expected_answer": "Sampling is a statistical technique that involves performing a predetermined number of observations on a population.",
+            "answerable": true,
+            "generated_answer": "Based on the excerpts, sampling is the process of selecting a subset of a population to represent the entire population, allowing for the testing of a hypothesis about a population's characteristics.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 8,
+                    "chunk_id": "2d71ecdb-c2b7-4d7b-9696-5c44b44e7214"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 83,
+                    "chunk_id": "50891185-1486-4aa5-a345-3dfa516ae515"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 24,
+                    "chunk_id": "c8046386-f95c-416d-af89-17ecde4e8437"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "2d71ecdb-c2b7-4d7b-9696-5c44b44e7214",
+                "2e1d78b6-0873-4255-9ede-a9d756004069",
+                "50891185-1486-4aa5-a345-3dfa516ae515",
+                "c8046386-f95c-416d-af89-17ecde4e8437",
+                "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7"
+            ],
+            "reranked_chunk_ids": [
+                "2d71ecdb-c2b7-4d7b-9696-5c44b44e7214",
+                "50891185-1486-4aa5-a345-3dfa516ae515",
+                "c8046386-f95c-416d-af89-17ecde4e8437"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Sampling\nSampling is the process of selecting a subset of a population to represent the entire population.\nIn statistics, sampling allows for the testing of a hypothesis about a population's characteristics."
+                },
+                {
+                    "text": "Key Takeaways\nSampling is a statistical technique that involves performing a \npredetermined number of observations on a population.\nKnown sampling methods can be used to draw conclusions about \nan entire population from a representative sample.\nIn simple random sampling, every sample of a given size has an \nequal probability of being selected.\nNon-probability sampling involves selecting a sample based on the \nsubjective judgment of the investigator."
+                },
+                {
+                    "text": "Probability Sampling\nProbability sampling is the selection of a sample from a population based on the randomization principle.\nIt ensures that the sample is representative of the population, allows researchers to estimate the level of \nuncertainty in their findings, and permits the results to be generalized across the whole population."
+                }
+            ],
+            "generation_latency_seconds": 9.51186620000226,
+            "llm_evaluation_latency_seconds": 12.999841099997866,
+            "total_latency_seconds": 22.587752100000216,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer correctly states that sampling is the process of selecting a subset of a population to represent the entire population, which is supported by the context."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about what sampling is."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the answer to the question about what sampling is."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "S02",
+            "question": "What is simple random sampling?",
+            "expected_answer": "A technique of sample selection in which every sample has an equal probability of selection.",
+            "answerable": true,
+            "generated_answer": "Based on the excerpts, simple random sampling is a technique where every sample has an equal probability of selection.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 26,
+                    "chunk_id": "7556b2da-6e39-44eb-b24d-fe75e1d92c44"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 83,
+                    "chunk_id": "50891185-1486-4aa5-a345-3dfa516ae515"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 24,
+                    "chunk_id": "c8046386-f95c-416d-af89-17ecde4e8437"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "7556b2da-6e39-44eb-b24d-fe75e1d92c44",
+                "50891185-1486-4aa5-a345-3dfa516ae515",
+                "c8046386-f95c-416d-af89-17ecde4e8437",
+                "2e1d78b6-0873-4255-9ede-a9d756004069",
+                "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7"
+            ],
+            "reranked_chunk_ids": [
+                "7556b2da-6e39-44eb-b24d-fe75e1d92c44",
+                "50891185-1486-4aa5-a345-3dfa516ae515",
+                "c8046386-f95c-416d-af89-17ecde4e8437"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Simple Random Sampling\nSimple random sampling is a technique of sample selection in which \nevery sample has an equal probability of selection."
+                },
+                {
+                    "text": "Key Takeaways\nSampling is a statistical technique that involves performing a \npredetermined number of observations on a population.\nKnown sampling methods can be used to draw conclusions about \nan entire population from a representative sample.\nIn simple random sampling, every sample of a given size has an \nequal probability of being selected.\nNon-probability sampling involves selecting a sample based on the \nsubjective judgment of the investigator."
+                },
+                {
+                    "text": "Probability Sampling\nProbability sampling is the selection of a sample from a population based on the randomization principle.\nIt ensures that the sample is representative of the population, allows researchers to estimate the level of \nuncertainty in their findings, and permits the results to be generalized across the whole population."
+                }
+            ],
+            "generation_latency_seconds": 9.505215400000452,
+            "llm_evaluation_latency_seconds": 12.629670800000895,
+            "total_latency_seconds": 22.21504139999888,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly states that 'every sample has an equal probability of being selected', which is supported by the context."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about simple random sampling."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context contains the information needed to answer the question about simple random sampling."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "S03",
+            "question": "What is systematic sampling?",
+            "expected_answer": "A probability sampling technique in which researchers randomly select members of a population at regular intervals.",
+            "answerable": true,
+            "generated_answer": "Systematic sampling is a probability sampling technique in which researchers randomly select members of a population at regular intervals, maintaining both efficiency and the original order of the units.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 29,
+                    "chunk_id": "28101711-7e13-42c8-8228-9e4c48caee23"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 32,
+                    "chunk_id": "4f9489ce-2a62-4fed-af24-3f7021d0835e"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 83,
+                    "chunk_id": "50891185-1486-4aa5-a345-3dfa516ae515"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "28101711-7e13-42c8-8228-9e4c48caee23",
+                "4f9489ce-2a62-4fed-af24-3f7021d0835e",
+                "50891185-1486-4aa5-a345-3dfa516ae515",
+                "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7",
+                "9bb5ba1b-6bec-42ea-b306-1ed00a5fbe32"
+            ],
+            "reranked_chunk_ids": [
+                "28101711-7e13-42c8-8228-9e4c48caee23",
+                "4f9489ce-2a62-4fed-af24-3f7021d0835e",
+                "50891185-1486-4aa5-a345-3dfa516ae515"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Systematic Sampling\nAn alternative \napproach A convenient approach\nSystematic \nsampling \nThe process involves systematically selecting elements from a subset \nthat is arranged in sequential order.\nSystematic sampling is a probability sampling technique in which researchers randomly \nselect members of a population at regular intervals."
+                },
+                {
+                    "text": "Systematic Sampling: Example\nIn a sequential arrangement of units, systematic sampling maintains both efficiency \nand the original order of the units.\nSamples are equidistant.\n1 2 3 4 5 6 7 8 9 10\nThe distance is being chosen logically."
+                },
+                {
+                    "text": "Key Takeaways\nSampling is a statistical technique that involves performing a \npredetermined number of observations on a population.\nKnown sampling methods can be used to draw conclusions about \nan entire population from a representative sample.\nIn simple random sampling, every sample of a given size has an \nequal probability of being selected.\nNon-probability sampling involves selecting a sample based on the \nsubjective judgment of the investigator."
+                }
+            ],
+            "generation_latency_seconds": 9.057657299999846,
+            "llm_evaluation_latency_seconds": 12.580843700001424,
+            "total_latency_seconds": 21.714360600002692,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context directly supports the factual claims in the generated answer."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about systematic sampling."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context contains the information needed to answer the question about systematic sampling."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "S04",
+            "question": "A population has 500 units and the required sample is 50. What is the sampling interval?",
+            "expected_answer": "The sampling interval is k = N/n = 500/50 = 10.",
+            "answerable": true,
+            "generated_answer": "Based on the excerpts, the sampling interval is 10.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 30,
+                    "chunk_id": "7e84f6a0-c74f-40fe-a87b-dd5f5c6149e2"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 60,
+                    "chunk_id": "890ca483-5f4c-43ca-b3ef-32866558be69"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 28,
+                    "chunk_id": "66f4c3fd-0558-4f1f-8ceb-952fbdb16640"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "ad7ac509-2859-4529-869b-b055b03cb41c",
+                "890ca483-5f4c-43ca-b3ef-32866558be69",
+                "2e1d78b6-0873-4255-9ede-a9d756004069",
+                "7e84f6a0-c74f-40fe-a87b-dd5f5c6149e2",
+                "66f4c3fd-0558-4f1f-8ceb-952fbdb16640"
+            ],
+            "reranked_chunk_ids": [
+                "7e84f6a0-c74f-40fe-a87b-dd5f5c6149e2",
+                "890ca483-5f4c-43ca-b3ef-32866558be69",
+                "66f4c3fd-0558-4f1f-8ceb-952fbdb16640"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Systematic Sampling: Example\nSuppose a population consists of N = 500 units and a sample of n = 50 units \nPopulation N = 500\nSample n = 50\nSample will be every kth unit\nk = N/n = 500/50 = 10\nThen, every kth unit, where k = N/n = 500/50 = 10 in the population is chosen."
+                },
+                {
+                    "text": "Sampling: Example\nConsider a population comprising four units, with the following values:\nUnit ref no. I II III IV\nValue 2 3 3 5"
+                },
+                {
+                    "text": "Simple Random Sampling: Example\nPopulation\nA\nB\nC\nSample of size 3\nEach sample 1/4\n3/4\nD\nA B C\nA B D\nA C D\nB C D\nEvery unit\nEach sample has a ¼ probability of being selected. Also, every unit has a ¾ probability of being selected.\nConsider a population consisting of four units: A, B, C, and D."
+                }
+            ],
+            "generation_latency_seconds": 10.371526399998402,
+            "llm_evaluation_latency_seconds": 13.579180000000633,
+            "total_latency_seconds": 24.07332260000112,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context directly states the sampling interval is 10, which matches the generated answer."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about the sampling interval."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context contains the information needed to answer the question about the sampling interval."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "S05",
+            "question": "What is stratified random sampling?",
+            "expected_answer": "A sampling method that divides a population into smaller subgroups known as strata, from which random samples are drawn.",
+            "answerable": true,
+            "generated_answer": "Based on the document excerpts, stratified random sampling is a method that divides a population into smaller subgroups known as strata, and then draws a random sample from each stratum in a way that is proportional to the size of the stratum in comparison to the population.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 33,
+                    "chunk_id": "80d2501f-4212-46e4-b89f-d4839241e208"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 34,
+                    "chunk_id": "935c8e70-5eb5-4c3f-b648-1beac903181f"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 35,
+                    "chunk_id": "59f99220-d17a-40ca-a226-4711d746ca33"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "80d2501f-4212-46e4-b89f-d4839241e208",
+                "59f99220-d17a-40ca-a226-4711d746ca33",
+                "935c8e70-5eb5-4c3f-b648-1beac903181f",
+                "85b11848-b7bd-4325-a554-a1eac15867bd",
+                "ea08db7e-4cfe-4eda-99e8-46a5ecc9f100"
+            ],
+            "reranked_chunk_ids": [
+                "80d2501f-4212-46e4-b89f-d4839241e208",
+                "935c8e70-5eb5-4c3f-b648-1beac903181f",
+                "59f99220-d17a-40ca-a226-4711d746ca33"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Stratified Random Sampling \nPopulation (heterogeneous)\n Strata (homogeneous)\nStratified random sampling is a sampling method that divides a population into smaller \nsubgroups known as strata."
+                },
+                {
+                    "text": "Stratified Random Sampling \nStrata Unit\nSimple random \nsampling \nof each stratum\nA random sample is drawn from each stratum in a number proportional to the size \nof the stratum in comparison to the population."
+                },
+                {
+                    "text": "Stratified Random Sampling \nSample Population\nBetter representation\nIn comparison to a sample drawn at random, the chosen sample includes members of all strata, \nmaking it a more accurate representation of the population."
+                }
+            ],
+            "generation_latency_seconds": 10.301397700000962,
+            "llm_evaluation_latency_seconds": 13.108380300000135,
+            "total_latency_seconds": 23.46155490000092,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context directly supports the generated answer, which accurately describes stratified random sampling."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about stratified random sampling."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context contains the information needed to answer the question about stratified random sampling."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "S06",
+            "question": "What is cluster sampling?",
+            "expected_answer": "A method in which the population is divided into clusters, a sample of clusters is selected, and all units from the selected clusters constitute the sample.",
+            "answerable": true,
+            "generated_answer": "Based on the excerpts, cluster sampling is a method in which the population is divided into several clusters, and a sample of clusters is selected using simple or stratified random sampling.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 37,
+                    "chunk_id": "c92f4a80-3f53-4215-86a4-7122c53cf396"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 38,
+                    "chunk_id": "85b11848-b7bd-4325-a554-a1eac15867bd"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 8,
+                    "chunk_id": "2d71ecdb-c2b7-4d7b-9696-5c44b44e7214"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "c92f4a80-3f53-4215-86a4-7122c53cf396",
+                "85b11848-b7bd-4325-a554-a1eac15867bd",
+                "9bb5ba1b-6bec-42ea-b306-1ed00a5fbe32",
+                "2d71ecdb-c2b7-4d7b-9696-5c44b44e7214",
+                "50891185-1486-4aa5-a345-3dfa516ae515"
+            ],
+            "reranked_chunk_ids": [
+                "c92f4a80-3f53-4215-86a4-7122c53cf396",
+                "85b11848-b7bd-4325-a554-a1eac15867bd",
+                "2d71ecdb-c2b7-4d7b-9696-5c44b44e7214"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Cluster Sampling \nPopulation Clusters\nCluster sampling is a method in which the population is divided into several clusters. All \nclusters are almost equally heterogeneous."
+                },
+                {
+                    "text": "Cluster Sampling \nA sample of clusters is selected using simple or stratified random sampling.\nAll units from these clusters together constitute the required sample.\nClusters\nSimple random \nsampling or\nstratified random \nsampling\nSample"
+                },
+                {
+                    "text": "Sampling\nSampling is the process of selecting a subset of a population to represent the entire population.\nIn statistics, sampling allows for the testing of a hypothesis about a population's characteristics."
+                }
+            ],
+            "generation_latency_seconds": 8.955370600000606,
+            "llm_evaluation_latency_seconds": 12.026500200001465,
+            "total_latency_seconds": 21.04311299999972,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer accurately reflects the context provided, which explicitly states the method of cluster sampling and the process of selecting a sample of clusters."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about what cluster sampling is."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the information needed to answer the question about cluster sampling."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "S07",
+            "question": "What are the four non-probability sampling methods?",
+            "expected_answer": "Convenience sampling, voluntary response sampling, snowball sampling, and judgmental or purposive sampling.",
+            "answerable": true,
+            "generated_answer": "Based on the document excerpts, the four non-probability sampling methods are:\n\n1. Convenience sampling\n2. Voluntary response sampling\n3. Judgmental or purposive sampling\n4. Snowball sampling\n\nSource reference: Document excerpts.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 46,
+                    "chunk_id": "095f2764-5763-49a7-b123-b30a42b2e1cf"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 84,
+                    "chunk_id": "3fd07e3f-9842-4edd-ae82-a2cd80c6cb1f"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 25,
+                    "chunk_id": "9bb5ba1b-6bec-42ea-b306-1ed00a5fbe32"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "095f2764-5763-49a7-b123-b30a42b2e1cf",
+                "dc076c98-b98b-4c18-94fd-a092004cb514",
+                "3fd07e3f-9842-4edd-ae82-a2cd80c6cb1f",
+                "93fc96e5-ecf0-494c-b461-0445fd3f53b9",
+                "9bb5ba1b-6bec-42ea-b306-1ed00a5fbe32"
+            ],
+            "reranked_chunk_ids": [
+                "095f2764-5763-49a7-b123-b30a42b2e1cf",
+                "3fd07e3f-9842-4edd-ae82-a2cd80c6cb1f",
+                "9bb5ba1b-6bec-42ea-b306-1ed00a5fbe32"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Non-Probability Sampling Methods\nThe four methods of non-probability sampling are:\nConvenience sampling\nSnowball sampling\nVoluntary response sampling\nJudgmental or purposive sampling"
+                },
+                {
+                    "text": "Key Takeaways\nThe four methods of non-probability sampling include convenience, \nvoluntary response, judgmental or purposeful, and snowball \nsampling.\nThe central limit theorem is applicable in situations involving other \ndistributions."
+                },
+                {
+                    "text": "Approaches to Probability Sampling\nThere are four approaches to probability sampling: \nSimple random sampling Systematic sampling\nStratified random sampling Cluster sampling"
+                }
+            ],
+            "generation_latency_seconds": 9.891762500003097,
+            "llm_evaluation_latency_seconds": 12.879221999995934,
+            "total_latency_seconds": 22.822724699995888,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context directly states the four non-probability sampling methods: convenience sampling, voluntary response sampling, judgmental or purposive sampling, and snowball sampling."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about the four non-probability sampling methods."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the answer to the question about the four non-probability sampling methods."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "S08",
+            "question": "What is convenience sampling?",
+            "expected_answer": "A type of non-probability sampling in which the researcher selects the sample based on convenience rather than random selection.",
+            "answerable": true,
+            "generated_answer": "Based on the excerpts, convenience sampling is an approach to sample selection in which sample units are chosen entirely on considerations of convenience.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 47,
+                    "chunk_id": "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 48,
+                    "chunk_id": "95e22883-48e8-4c21-8500-dacc67ffabdd"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 57,
+                    "chunk_id": "decf98d9-481b-497e-88ff-ffd2b5734068"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7",
+                "c4bc5c6c-144a-490b-8ec5-5488f9c79b21",
+                "95e22883-48e8-4c21-8500-dacc67ffabdd",
+                "decf98d9-481b-497e-88ff-ffd2b5734068",
+                "f2577f80-f41f-4284-9b3d-b2ece6642c01"
+            ],
+            "reranked_chunk_ids": [
+                "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7",
+                "95e22883-48e8-4c21-8500-dacc67ffabdd",
+                "decf98d9-481b-497e-88ff-ffd2b5734068"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Convenience Sampling\nIt is a type of non-probability sampling in which the researcher selects the sample based \non convenience rather than random selection."
+                },
+                {
+                    "text": "Convenience Sampling: Example\nConsider the example of a supermarket chain that has prepared a \nquestionnaire to initiate steps toward improving customer satisfaction.\nTo expedite the \nprocess \nQuestionnaires were handed to \ncustomers who visited the market \nin the next couple of days.\nSo here, the sample of customers chosen constitutes a convenience sample."
+                },
+                {
+                    "text": "Discussion: Non-Probability Sampling\n• What is non-probability sampling?\nAnswer: It is an approach to sample selection wherein a sample is selected \nbased on the subjective judgment of the investigator. \n• What is convenience sampling?\nAnswer: It is an approach to sample selection in which sample units are \nchosen entirely on considerations of convenience.\nDuration: 15 minutes"
+                }
+            ],
+            "generation_latency_seconds": 9.63000070000271,
+            "llm_evaluation_latency_seconds": 13.168033199995989,
+            "total_latency_seconds": 22.858363400002418,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly states that convenience sampling is a type of non-probability sampling in which the researcher selects the sample based on convenience rather than random selection, which is supported by the context."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about what convenience sampling is."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context directly contains the answer to the question about what convenience sampling is."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "S09",
+            "question": "What is voluntary response sampling?",
+            "expected_answer": "A type of non-probability sampling in which participants volunteer to participate in the study.",
+            "answerable": true,
+            "generated_answer": "Based on the excerpts, voluntary response sampling is a type of non-probability sampling in which the researcher selects the sample from people who volunteer to participate in the study.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 49,
+                    "chunk_id": "682b2f9c-9436-4f3b-ab14-726806b3927a"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 50,
+                    "chunk_id": "81087988-edf9-40cd-8c04-79f6c9e7fc8c"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 46,
+                    "chunk_id": "095f2764-5763-49a7-b123-b30a42b2e1cf"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "682b2f9c-9436-4f3b-ab14-726806b3927a",
+                "81087988-edf9-40cd-8c04-79f6c9e7fc8c",
+                "095f2764-5763-49a7-b123-b30a42b2e1cf",
+                "c6a1439e-f9b0-4269-b3c9-c0e12fd49da7",
+                "50891185-1486-4aa5-a345-3dfa516ae515"
+            ],
+            "reranked_chunk_ids": [
+                "682b2f9c-9436-4f3b-ab14-726806b3927a",
+                "81087988-edf9-40cd-8c04-79f6c9e7fc8c",
+                "095f2764-5763-49a7-b123-b30a42b2e1cf"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Voluntary Response Sampling\nIt is a type of non-probability sampling in which the researcher selects the sample \nfrom people who volunteer to participate in the study."
+                },
+                {
+                    "text": "Voluntary Response Sampling: Example\nThis process of obtaining responses from selected respondents is clearly voluntary response sampling.\n• Websites invite individuals to offer responses\n• Only a few individuals provide responses\n \nConsider the following example:"
+                },
+                {
+                    "text": "Non-Probability Sampling Methods\nThe four methods of non-probability sampling are:\nConvenience sampling\nSnowball sampling\nVoluntary response sampling\nJudgmental or purposive sampling"
+                }
+            ],
+            "generation_latency_seconds": 9.53434240000206,
+            "llm_evaluation_latency_seconds": 12.829586499996367,
+            "total_latency_seconds": 22.42952399999922,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The context directly supports the factual claims in the generated answer."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about voluntary response sampling."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "The context contains the information needed to answer the question about voluntary response sampling."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        },
+        {
+            "id": "S10",
+            "question": "What does the Central Limit Theorem state?",
+            "expected_answer": "Independent random variables approach a normal distribution as the sample size increases, regardless of the underlying population distribution.",
+            "answerable": true,
+            "generated_answer": "The Central Limit Theorem states that independent random variables approach a normal distribution as the sample size increases, regardless of the underlying population distribution.",
+            "sources": [
+                {
+                    "source_id": "S1",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 67,
+                    "chunk_id": "bcf62ae3-10d0-4149-8af3-3d3bd3f740bc"
+                },
+                {
+                    "source_id": "S2",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 66,
+                    "chunk_id": "1602f9e4-a6ae-47c5-bf04-63b274687aa2"
+                },
+                {
+                    "source_id": "S3",
+                    "source": "0a8f03aa196a4679acde97f60ed61f1b_Lesson_08_Sampling_and_Sampling_Techniques.pdf",
+                    "page_number": 84,
+                    "chunk_id": "3fd07e3f-9842-4edd-ae82-a2cd80c6cb1f"
+                }
+            ],
+            "model": "llama3.2:1b",
+            "retrieved_chunk_ids": [
+                "1602f9e4-a6ae-47c5-bf04-63b274687aa2",
+                "bcf62ae3-10d0-4149-8af3-3d3bd3f740bc",
+                "5be865f9-a510-4722-96e7-314d97b8acb5",
+                "3fd07e3f-9842-4edd-ae82-a2cd80c6cb1f",
+                "66d0c557-9ee5-4b6f-92c4-d931a4e33887"
+            ],
+            "reranked_chunk_ids": [
+                "bcf62ae3-10d0-4149-8af3-3d3bd3f740bc",
+                "1602f9e4-a6ae-47c5-bf04-63b274687aa2",
+                "3fd07e3f-9842-4edd-ae82-a2cd80c6cb1f"
+            ],
+            "retrieved_context": [
+                {
+                    "text": "Central Limit Theorem\nThe central limit theorem (CLT) states that independent random variables approach a normal \ndistribution as the sample size increases, regardless of the underlying population distribution. This \napplies to both the sum and average of the random variables.\nIf a random sample of size n is drawn from a normal population with \nparameters μ and σ, denoted as X1, X2, ..., Xk, ..., Xn, the sample mean (𝑥 ̅) \nfollows a normal distribution with parameters μ and σ divided by the square \nroot of n."
+                },
+                {
+                    "text": "Central Limit Theorem (CLT)"
+                },
+                {
+                    "text": "Key Takeaways\nThe four methods of non-probability sampling include convenience, \nvoluntary response, judgmental or purposeful, and snowball \nsampling.\nThe central limit theorem is applicable in situations involving other \ndistributions."
+                }
+            ],
+            "generation_latency_seconds": 9.632301899997401,
+            "llm_evaluation_latency_seconds": 14.128232199997,
+            "total_latency_seconds": 23.846543899999233,
+            "evaluation": {
+                "faithfulness": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly states the Central Limit Theorem and its key points, which are supported by the context."
+                },
+                "answer_relevancy": {
+                    "score": 1.0,
+                    "reason": "The generated answer directly addresses the user's question about the Central Limit Theorem."
+                },
+                "context_relevancy": {
+                    "score": 1.0,
+                    "reason": "Context 1 directly answers the question about the Central Limit Theorem and its key points."
+                },
+                "answer_correctness": {
+                    "score": 1.0,
+                    "reason": "The generated answer matches the expected answer."
+                }
+            },
+            "status": "success",
+            "error": null
+        }
+    ]
+}
