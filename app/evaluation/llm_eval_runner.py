@@ -27,6 +27,7 @@ TOP_K = 5
 TOP_N = 3
 
 PASS_THRESHOLD = 0.7
+MAX_QUESTIONS = None
 
 
 # --------------------------------------------------
@@ -212,6 +213,9 @@ def main():
             "Dataset must be a non-empty JSON list."
         )
 
+    if MAX_QUESTIONS is not None:
+       dataset = dataset[:MAX_QUESTIONS]
+
     RESULTS_DIR.mkdir(
         parents=True,
         exist_ok=True,
@@ -223,9 +227,7 @@ def main():
 
     logger.info("Loading LLM evaluator...")
 
-    evaluator = LLMEvaluator(
-        model_name="qwen2.5:3b"
-    )
+    evaluator = LLMEvaluator()
 
     results = []
 

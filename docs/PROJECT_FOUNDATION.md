@@ -1646,3 +1646,157 @@ Potential future improvements include:
 
 **Project:** Enterprise RAG Platform  
 **Documentation:** Project Foundation and Deployment Overview
+
+
+# Evaluation Module — Enterprise RAG Platform
+
+## 1. Overview
+
+The Evaluation Module measures the retrieval performance and answer quality of the Enterprise RAG Platform.
+
+It consists of two major components:
+
+1. Retrieval Evaluation
+2. LLM-based Evaluation
+
+The module helps identify retrieval errors, assess generated answer quality, and measure the reliability of the RAG pipeline.
+
+## 2. Retrieval Evaluation
+
+Retrieval Evaluation measures how effectively the system retrieves relevant document chunks for a given query.
+
+### Metrics
+
+| Metric | Description |
+|---|---|
+| Precision@K | Measures the proportion of retrieved chunks that are relevant. |
+| Recall@K | Measures the proportion of relevant chunks successfully retrieved. |
+| Hit Rate@K | Checks whether at least one relevant chunk appears in the top-K results. |
+| MRR | Measures the ranking position of the first relevant result across queries. |
+
+### Implementation
+
+- `app/evaluation/evaluation_runner.py`
+- `app/evaluation/metrics.py`
+
+These components execute retrieval evaluation and calculate the corresponding metrics using the evaluation dataset.
+
+## 3. LLM-based Evaluation
+
+LLM-based Evaluation assesses the quality of generated answers using an independent LLM Judge.
+
+### Evaluation Metrics
+
+| Metric | Purpose |
+|---|---|
+| Faithfulness | Measures whether the generated answer is supported by the retrieved context. |
+| Answer Relevancy | Measures how relevant the generated answer is to the user's question. |
+| Context Relevancy | Evaluates the relevance of retrieved context to the query. |
+| Answer Correctness | Measures the correctness of the generated answer against the expected answer. |
+
+## 4. LLM Judge Configuration
+
+The evaluation architecture uses a separate model to assess generated responses.
+
+| Component | Model |
+|---|---|
+| Generator | Ollama — llama3.2:1b |
+| LLM Judge | Ollama — qwen2.5:3b |
+
+Structured output is implemented using Pydantic schemas to obtain metric scores and evaluation explanations in a consistent format.
+
+## 5. Evaluation Workflow
+
+The LLM evaluation pipeline follows these stages:
+
+1. Load a question from the evaluation dataset.
+2. Retrieve the top-K document chunks.
+3. Rerank the retrieved chunks and select the top-N results.
+4. Generate an answer using the selected context.
+5. Evaluate the generated answer using the LLM Judge.
+6. Store metric scores, explanations, and evaluation results.
+
+**Workflow:**
+
+Dataset → Retrieval → Reranking → Generation → LLM Judge → Evaluation Results
+
+## 6. Evaluation Dataset
+
+The evaluation dataset contains 30 questions distributed across three categories.
+
+| Category | Question IDs | Questions |
+|---|---|---:|
+| Employee Policy | E01–E10 | 10 |
+| Data Understanding | D01–D10 | 10 |
+| Sampling | S01–S10 | 10 |
+| Total | | 30 |
+
+Each dataset record includes the question, expected answer, source document, category, answerability status, and relevant chunk identifiers.
+
+## 7. Implementation Structure
+
+| File | Responsibility |
+|---|---|
+| `app/evaluation/evaluation_runner.py` | Retrieval evaluation execution |
+| `app/evaluation/metrics.py` | Retrieval metric calculations |
+| `app/evaluation/llm_evaluator.py` | LLM Judge evaluation and structured outputs |
+| `app/evaluation/llm_metrics.py` | LLM evaluation metric aggregation |
+| `app/evaluation/llm_eval_runner.py` | End-to-end LLM evaluation execution |
+| `app/evaluation/dataset.json` | Evaluation dataset |
+
+## 8. Engineering Challenges and Improvements
+
+### Judge Consistency
+
+Initial experiments with a smaller Judge model showed inconsistencies between evaluation scores and explanations.
+
+The Judge model was changed to Qwen2.5:3B, and consistency instructions were added to the evaluation prompt.
+
+### Ground-Truth Alignment
+
+A dataset chunk identifier used for D02 was not present in the current ChromaDB collection.
+
+The relevant chunks were identified from the stored documents, and the dataset references were updated.
+
+### Question Ambiguity
+
+The D02 investigation highlighted the importance of precise evaluation questions. The question was refined to specify the intended statistical data classification.
+
+Further investigation also showed that the generator could be distracted by other information present in the retrieved context.
+
+### Dataset Validation
+
+A malformed JSON entry caused a JSON decoding error during evaluation. The dataset was corrected before continuing execution.
+
+## 9. Evaluation Results
+
+Evaluation results are stored in structured output files for metric analysis.
+
+The reported Qwen2.5:3B evaluation run recorded:
+
+- Total questions: 30
+- Successful executions: 30
+- Failed executions: 0
+- Overall score: 91.67%
+- Overall pass rate: 80%
+
+Average metric scores:
+
+| Metric | Average Score |
+|---|---:|
+| Faithfulness | 91.67% |
+| Answer Relevancy | 86.67% |
+| Context Relevancy | 91.67% |
+| Answer Correctness | 96.67% |
+
+**Note:** Successful execution indicates that the evaluation pipeline completed without runtime failures. It does not mean that every generated answer passed every evaluation metric. Individual low-scoring cases still require analysis.
+
+## 10. Key Engineering Learnings
+
+- Retrieval quality and generated answer quality must be evaluated independently.
+- Ground-truth labels must remain aligned with the current vector database.
+- LLM Judge scores require validation against their explanations and actual outputs.
+- Precise evaluation questions improve the reliability of test cases.
+- Structured evaluation outputs simplify analysis and debugging.
+- Evaluation should be treated as an iterative quality-improvement process.
+

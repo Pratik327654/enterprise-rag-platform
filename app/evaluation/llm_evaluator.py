@@ -36,7 +36,7 @@ class LLMEvaluator:
 
     def __init__(
         self,
-        model_name: str = settings.LLM_MODEL,
+        model_name: str = settings.JUDGE_MODEL,
         base_url: str = settings.OLLAMA_BASE_URL,
         temperature: float = 0.0,
         llm=None,

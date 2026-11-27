@@ -10,10 +10,10 @@
         "average_scores": {
             "faithfulness": 0.9167,
             "answer_relevancy": 0.8667,
-            "context_relevancy": 0.9,
+            "context_relevancy": 0.9167,
             "answer_correctness": 0.9667
         },
-        "overall_score": 0.9125,
+        "overall_score": 0.9167,
         "pass_statistics": {
             "threshold": 0.7,
             "metric_pass_rates": {
@@ -76,9 +76,9 @@
                     "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
                 }
             ],
-            "generation_latency_seconds": 45.188078099999984,
-            "llm_evaluation_latency_seconds": 70.29574850000063,
-            "total_latency_seconds": 119.97277520000353,
+            "generation_latency_seconds": 46.14865182199992,
+            "llm_evaluation_latency_seconds": 55.9095903299999,
+            "total_latency_seconds": 107.81672875000004,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -150,9 +150,9 @@
                     "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
                 }
             ],
-            "generation_latency_seconds": 9.860681999998633,
-            "llm_evaluation_latency_seconds": 11.982227400003467,
-            "total_latency_seconds": 21.939707199999248,
+            "generation_latency_seconds": 5.205389752999963,
+            "llm_evaluation_latency_seconds": 12.898033424000005,
+            "total_latency_seconds": 18.83495858099991,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -224,9 +224,9 @@
                     "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
                 }
             ],
-            "generation_latency_seconds": 8.814565599997877,
-            "llm_evaluation_latency_seconds": 12.277123699997901,
-            "total_latency_seconds": 21.185887899999216,
+            "generation_latency_seconds": 9.672936784000058,
+            "llm_evaluation_latency_seconds": 11.598443812000141,
+            "total_latency_seconds": 21.835289344999865,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -298,9 +298,9 @@
                     "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
                 }
             ],
-            "generation_latency_seconds": 8.87654069999553,
-            "llm_evaluation_latency_seconds": 11.703020200002356,
-            "total_latency_seconds": 20.673500000004424,
+            "generation_latency_seconds": 6.008498991000124,
+            "llm_evaluation_latency_seconds": 8.758709589999853,
+            "total_latency_seconds": 15.366315635000092,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -372,9 +372,9 @@
                     "text": "Page 2\n Employee Policy Handbook\n4. Remote Work Policy\nEligible employees may work remotely up to two days per week with prior manager approval.\nEmployees must remain reachable during their agreed working hours and must follow the\norganization's information security requirements.\n5. Learning and Development\nThe organization provides an annual learning allowance of INR 15,000 per employee. The\nallowance may be used for approved professional courses, certifications, and role-related learning\nresources. Employees must obtain manager approval before making a purchase for\nreimbursement.\n6. Expense Reimbursement\nEligible business expenses must be submitted through the expense management portal within 30"
                 }
             ],
-            "generation_latency_seconds": 9.970619600004284,
-            "llm_evaluation_latency_seconds": 12.940890999998373,
-            "total_latency_seconds": 23.00752189999912,
+            "generation_latency_seconds": 6.017088877000106,
+            "llm_evaluation_latency_seconds": 8.142160890000014,
+            "total_latency_seconds": 14.399892129999898,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -446,9 +446,9 @@
                     "text": "Page 1\n Employee Policy Handbook\nSample document for Enterprise RAG Platform testing\nDocument type: Internal HR policy sample\nVersion: 1.0\nEffective date: 1 January 2026\nDocument owner: Human Resources Department\n1. Annual Leave Policy\nFull-time employees receive 20 days of annual leave per calendar year. Annual leave is credited\nat the beginning of each calendar year. Employees who join during the year receive a prorated\nleave balance based on their joining date.\nEmployees must submit annual leave requests through the HR portal. Managers are responsible\nfor reviewing requests and approving or declining them based on team availability and business\nrequirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy"
                 }
             ],
-            "generation_latency_seconds": 9.976339100001496,
-            "llm_evaluation_latency_seconds": 13.61010809999425,
-            "total_latency_seconds": 23.664718100000755,
+            "generation_latency_seconds": 5.757380328000181,
+            "llm_evaluation_latency_seconds": 8.734680328999957,
+            "total_latency_seconds": 14.71583482899996,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -520,9 +520,9 @@
                     "text": "Page 1\n Employee Policy Handbook\nSample document for Enterprise RAG Platform testing\nDocument type: Internal HR policy sample\nVersion: 1.0\nEffective date: 1 January 2026\nDocument owner: Human Resources Department\n1. Annual Leave Policy\nFull-time employees receive 20 days of annual leave per calendar year. Annual leave is credited\nat the beginning of each calendar year. Employees who join during the year receive a prorated\nleave balance based on their joining date.\nEmployees must submit annual leave requests through the HR portal. Managers are responsible\nfor reviewing requests and approving or declining them based on team availability and business\nrequirements. Employees should submit planned leave requests at least five working days in\nadvance.\n2. Sick Leave Policy"
                 }
             ],
-            "generation_latency_seconds": 9.971896100003505,
-            "llm_evaluation_latency_seconds": 12.931260500001372,
-            "total_latency_seconds": 22.977647100000468,
+            "generation_latency_seconds": 5.427309570000034,
+            "llm_evaluation_latency_seconds": 8.969963086999996,
+            "total_latency_seconds": 14.565647227,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -594,9 +594,9 @@
                     "text": "End of sample document. This is fictional test content created for software development and RAG evaluation. It is not an\nactual company's HR policy."
                 }
             ],
-            "generation_latency_seconds": 9.265496499996516,
-            "llm_evaluation_latency_seconds": 12.693496200001391,
-            "total_latency_seconds": 22.048764300001494,
+            "generation_latency_seconds": 5.406144498000003,
+            "llm_evaluation_latency_seconds": 8.381246595999983,
+            "total_latency_seconds": 14.008826308999915,
             "evaluation": {
                 "faithfulness": {
                     "score": 0.0,
@@ -668,9 +668,9 @@
                     "text": "Stratified Random Sampling: Example \nAn employee satisfaction survey is being conducted in a large company.\nThe employees’ opinions could vary at different levels in the hierarchy and in different functions, like:\nSales\nAccounting\nMarketing\nHuman resources"
                 }
             ],
-            "generation_latency_seconds": 8.735175800000434,
-            "llm_evaluation_latency_seconds": 11.730360499997914,
-            "total_latency_seconds": 20.554712500001187,
+            "generation_latency_seconds": 5.316907123000192,
+            "llm_evaluation_latency_seconds": 8.562142021999989,
+            "total_latency_seconds": 14.048353634000023,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -742,9 +742,9 @@
                     "text": "End of sample document. This is fictional test content created for software development and RAG evaluation. It is not an\nactual company's HR policy."
                 }
             ],
-            "generation_latency_seconds": 10.177549600004568,
-            "llm_evaluation_latency_seconds": 11.886116099994979,
-            "total_latency_seconds": 22.141933699997026,
+            "generation_latency_seconds": 5.718442650000043,
+            "llm_evaluation_latency_seconds": 8.982038604000081,
+            "total_latency_seconds": 14.86312335699995,
             "evaluation": {
                 "faithfulness": {
                     "score": 0.0,
@@ -816,9 +816,9 @@
                     "text": "Determining the Type of Data to Be Used\nExamples:\nDiameter of wires\n• Inspected using a go or no-\ngo gauge\n• Categorized as within or \noutside specification limits\n• Qualitative data is directly \ncollected\n• Data collection process is \nsimplified\nScores of students\n• Classified into grades, \nsuch as Grade A, Grade \nB, Grade C, and Grade F\n• Quantitative data is \ncollected initially\n• Data collected is \ncategorized into classes"
                 }
             ],
-            "generation_latency_seconds": 8.934744699996372,
-            "llm_evaluation_latency_seconds": 13.641089800003101,
-            "total_latency_seconds": 22.646375199998147,
+            "generation_latency_seconds": 5.758666637000033,
+            "llm_evaluation_latency_seconds": 9.815186106999818,
+            "total_latency_seconds": 15.698579268999993,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -842,73 +842,73 @@
         },
         {
             "id": "D02",
-            "question": "What are the two main types of data?",
+            "question": "What are the different ways data is categorized in this lesson?",
             "expected_answer": "Qualitative and quantitative data.",
             "answerable": true,
-            "generated_answer": "Based on the document excerpts, the two main types of data are:\n\n1. Structured data (referred to as \"data recorded or stored in a predefined format for easy search and use during analysis\")\n2. Unstructured data (referred to as \"data not recorded in a predefined format, such as document collection through invoices, records, emails, and productivity applications\")",
+            "generated_answer": "Based on the document excerpts, the different ways data is categorized are:\n\n1. Raw data\n2. Processed data\n3. Primary data\n4. Secondary data\n\nSource reference: Document excerpts from [S1] Learning Objectives, [S2] Types of Data, and [S3] Determining the Type of Data to Be Used.",
             "sources": [
                 {
                     "source_id": "S1",
                     "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
-                    "page_number": 55,
-                    "chunk_id": "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7"
+                    "page_number": 3,
+                    "chunk_id": "8c414d1e-f3aa-480c-b34b-0fead2e042cf"
                 },
                 {
                     "source_id": "S2",
                     "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
-                    "page_number": 35,
-                    "chunk_id": "701f5952-e6ed-4542-b1d7-2e3887cbdc6b"
+                    "page_number": 16,
+                    "chunk_id": "d6e09176-4e95-4b48-ac0a-db0eb311fbe9"
                 },
                 {
                     "source_id": "S3",
                     "source": "437397111fc1448fb126b0eae37f0c61_Lesson_03_Understanding_the_Data.pdf",
-                    "page_number": 6,
-                    "chunk_id": "e09442ff-9a8b-42d7-9c50-76d748369403"
+                    "page_number": 21,
+                    "chunk_id": "bb812949-b84c-4d7d-92e1-9c2ab6787087"
                 }
             ],
             "model": "llama3.2:1b",
             "retrieved_chunk_ids": [
+                "8c414d1e-f3aa-480c-b34b-0fead2e042cf",
+                "ad93545b-1d63-4fa8-ac06-cb5a9bd59c2e",
+                "bb812949-b84c-4d7d-92e1-9c2ab6787087",
                 "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
-                "e09442ff-9a8b-42d7-9c50-76d748369403",
-                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7",
-                "41655fd7-3822-496b-baaf-5c48faee0d28",
-                "ad93545b-1d63-4fa8-ac06-cb5a9bd59c2e"
+                "d6e09176-4e95-4b48-ac0a-db0eb311fbe9"
             ],
             "reranked_chunk_ids": [
-                "9e32b291-d0f6-4a1e-832f-ba0fadfa57a7",
-                "701f5952-e6ed-4542-b1d7-2e3887cbdc6b",
-                "e09442ff-9a8b-42d7-9c50-76d748369403"
+                "8c414d1e-f3aa-480c-b34b-0fead2e042cf",
+                "d6e09176-4e95-4b48-ac0a-db0eb311fbe9",
+                "bb812949-b84c-4d7d-92e1-9c2ab6787087"
             ],
             "retrieved_context": [
                 {
-                    "text": "Types of Data\nWhat are the different types of data?\n• Give an example of structured data.\nAnswer: Data recorded or stored in a predefined format for easy search and \nuse during analysis is referred to as structured data. An example of this is the \ncollection of stock at the end of a month.\n• Give an example of unstructured data.\nAnswer: When data is not recorded in a predefined format, it is referred to as \nunstructured data. An example of this is document collection through \ninvoices, records, emails, and productivity applications.\nDuration: 15 minutes"
+                    "text": "Learning Objectives\nBy the end of this lesson, you will be able to:\nExplore different types of data\nCategorize data from a statistical perspective\nDistinguish among raw data, processed data, and primary and \nsecondary data"
                 },
                 {
-                    "text": "Types of Data"
+                    "text": "Types of Data\nDifferent types of data can be collected and analyzed in different situations.\nThe appropriate data must be used based on the context of the study.\n• Data needs to be studied and analyzed \nstatistically to gain useful information.\n• There are several ways to categorize data."
                 },
                 {
-                    "text": "Types of Data in Business Contexts"
+                    "text": "Determining the Type of Data to Be Used\nExamples:\nDiameter of wires\n• Inspected using a go or no-\ngo gauge\n• Categorized as within or \noutside specification limits\n• Qualitative data is directly \ncollected\n• Data collection process is \nsimplified\nScores of students\n• Classified into grades, \nsuch as Grade A, Grade \nB, Grade C, and Grade F\n• Quantitative data is \ncollected initially\n• Data collected is \ncategorized into classes"
                 }
             ],
-            "generation_latency_seconds": 9.702329800005828,
-            "llm_evaluation_latency_seconds": 11.924860400002217,
-            "total_latency_seconds": 21.717095100000734,
+            "generation_latency_seconds": 6.668431621000082,
+            "llm_evaluation_latency_seconds": 9.620904333999988,
+            "total_latency_seconds": 16.459648269000127,
             "evaluation": {
                 "faithfulness": {
                     "score": 0.5,
-                    "reason": "The context mentions 'structured data' and 'unstructured data', but does not explicitly state 'two main types of data'."
+                    "reason": "The context mentions different types of data but does not specifically list 'raw data', 'processed data', 'primary data', and 'secondary data' as ways data is categorized. The generated answer includes these categories, which are not explicitly supported by the context."
                 },
                 "answer_relevancy": {
                     "score": 1.0,
-                    "reason": "The generated answer directly addresses the user's question about the two main types of data."
+                    "reason": "The generated answer directly addresses the user's question about different ways data is categorized in the lesson."
                 },
                 "context_relevancy": {
-                    "score": 0.0,
-                    "reason": "The context does not directly answer the question about the two main types of data."
+                    "score": 0.5,
+                    "reason": "The context mentions different types of data but does not provide specific information about categorizing data in the ways mentioned in the generated answer."
                 },
                 "answer_correctness": {
                     "score": 1.0,
-                    "reason": "The generated answer matches the expected answer."
+                    "reason": "The generated answer matches the expected answer 'Qualitative and quantitative data' which is not relevant to the user's question about categorizing data."
                 }
             },
             "status": "success",
@@ -964,9 +964,9 @@
                     "text": "Data Used in Businesses\nHow can data analysis assist in growing a business?\n• What is data?\nAnswer: Data is facts and figures that are collected, analyzed, and \nsummarized for presentation and interpretation. The data collected or \ncompiled for a statistical investigation is referred to as a dataset.\n• What are the types of data?\nAnswer: The types of data include:\n• Qualitative, attributed, or categorical data\n• Quantitative, variable, or measurable data\nDuration: 15 minutes"
                 }
             ],
-            "generation_latency_seconds": 8.754167299994151,
-            "llm_evaluation_latency_seconds": 12.921403000000282,
-            "total_latency_seconds": 21.753325699995912,
+            "generation_latency_seconds": 6.095540816000039,
+            "llm_evaluation_latency_seconds": 9.050713724999923,
+            "total_latency_seconds": 15.487397020000117,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1038,9 +1038,9 @@
                     "text": "Data Collection\nSources of statistical data can be broadly categorized into:\nData collection plays an important role in statistical analysis. \nSecondary data\nPrimary data"
                 }
             ],
-            "generation_latency_seconds": 8.76164869999775,
-            "llm_evaluation_latency_seconds": 11.816644999998971,
-            "total_latency_seconds": 20.63499089999823,
+            "generation_latency_seconds": 5.755853575999936,
+            "llm_evaluation_latency_seconds": 8.678353417000153,
+            "total_latency_seconds": 14.534394424999846,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1112,9 +1112,9 @@
                     "text": "Data Collection\nSources of statistical data can be broadly categorized into:\nData collection plays an important role in statistical analysis. \nSecondary data\nPrimary data"
                 }
             ],
-            "generation_latency_seconds": 9.605188100002124,
-            "llm_evaluation_latency_seconds": 12.381440199998906,
-            "total_latency_seconds": 22.042839299996558,
+            "generation_latency_seconds": 5.566289065999854,
+            "llm_evaluation_latency_seconds": 8.53983889899996,
+            "total_latency_seconds": 14.198315691999824,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1186,9 +1186,9 @@
                     "text": "Structured vs. Unstructured Data\n• In structured data, statistical measures \nsuch as mean, median, mode, and \nstandard deviation can be directly \ncalculated.\n• Structured data facilitates easy \nsearching and objective analysis.\n• In unstructured data, statistical \ntechniques may be applied indirectly, \nsuch as analyzing aggregated metrics \nor patterns.\n• Despite its complexity, unstructured \ndata can still yield useful information. \nStructured data Unstructured data \nTherefore, both types of data are useful."
                 }
             ],
-            "generation_latency_seconds": 9.624239400000079,
-            "llm_evaluation_latency_seconds": 11.732748900001752,
-            "total_latency_seconds": 21.448838300006173,
+            "generation_latency_seconds": 6.640735311000071,
+            "llm_evaluation_latency_seconds": 8.659876132999898,
+            "total_latency_seconds": 15.480014409999967,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1260,9 +1260,9 @@
                     "text": "Learning Objectives\nBy the end of this lesson, you will be able to:\nIdentify the difference between structured and unstructured data\nUnderstand the importance of data quality\nDifferentiate among cross-sectional, time series, pooled, and panel \ndata"
                 }
             ],
-            "generation_latency_seconds": 8.862233300002117,
-            "llm_evaluation_latency_seconds": 11.59137809999811,
-            "total_latency_seconds": 20.539237299999513,
+            "generation_latency_seconds": 5.848642143999996,
+            "llm_evaluation_latency_seconds": 8.71314915400012,
+            "total_latency_seconds": 14.731887015999973,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1334,9 +1334,9 @@
                     "text": "The correct answer is\nKnowledge \nCheck\nD.\nC.\nB.\nA.\nA\nCross-sectional data refers to the data collected through the observation of numerous subjects.\nPooled data\nPanel data\nTime series data\nCross-sectional data\n1\nWhich of the following refers to the data collected through the observation of \nnumerous subjects?"
                 }
             ],
-            "generation_latency_seconds": 8.862924300003215,
-            "llm_evaluation_latency_seconds": 13.20491540000512,
-            "total_latency_seconds": 22.12411229999998,
+            "generation_latency_seconds": 6.5594553189998805,
+            "llm_evaluation_latency_seconds": 8.403992128000027,
+            "total_latency_seconds": 15.072565938000025,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1408,9 +1408,9 @@
                     "text": "Data Used in Businesses\nHow can data analysis assist in growing a business?\n• What is data?\nAnswer: Data is facts and figures that are collected, analyzed, and \nsummarized for presentation and interpretation. The data collected or \ncompiled for a statistical investigation is referred to as a dataset.\n• What are the types of data?\nAnswer: The types of data include:\n• Qualitative, attributed, or categorical data\n• Quantitative, variable, or measurable data\nDuration: 15 minutes"
                 }
             ],
-            "generation_latency_seconds": 9.846519400001853,
-            "llm_evaluation_latency_seconds": 12.637105000001611,
-            "total_latency_seconds": 22.547464299997955,
+            "generation_latency_seconds": 5.742955846999848,
+            "llm_evaluation_latency_seconds": 8.831293347999917,
+            "total_latency_seconds": 14.694665962000045,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1482,9 +1482,9 @@
                     "text": "Knowledge \nCheck\nA.\nB.\nC.\nD.\nCross-sectional data\nTime series data\nPanel data\nPooled data\nWhich of the following refers to the data collected through the observation of \nnumerous subjects? 1"
                 }
             ],
-            "generation_latency_seconds": 9.616108900001564,
-            "llm_evaluation_latency_seconds": 11.864717900003598,
-            "total_latency_seconds": 21.53079440000147,
+            "generation_latency_seconds": 6.896280783000066,
+            "llm_evaluation_latency_seconds": 8.656740320999916,
+            "total_latency_seconds": 15.65314593800008,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1556,9 +1556,9 @@
                     "text": "Probability Sampling\nProbability sampling is the selection of a sample from a population based on the randomization principle.\nIt ensures that the sample is representative of the population, allows researchers to estimate the level of \nuncertainty in their findings, and permits the results to be generalized across the whole population."
                 }
             ],
-            "generation_latency_seconds": 9.51186620000226,
-            "llm_evaluation_latency_seconds": 12.999841099997866,
-            "total_latency_seconds": 22.587752100000216,
+            "generation_latency_seconds": 6.094469146999927,
+            "llm_evaluation_latency_seconds": 8.972742515999926,
+            "total_latency_seconds": 15.188553405999983,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1630,9 +1630,9 @@
                     "text": "Probability Sampling\nProbability sampling is the selection of a sample from a population based on the randomization principle.\nIt ensures that the sample is representative of the population, allows researchers to estimate the level of \nuncertainty in their findings, and permits the results to be generalized across the whole population."
                 }
             ],
-            "generation_latency_seconds": 9.505215400000452,
-            "llm_evaluation_latency_seconds": 12.629670800000895,
-            "total_latency_seconds": 22.21504139999888,
+            "generation_latency_seconds": 5.671560735999947,
+            "llm_evaluation_latency_seconds": 8.884837947000051,
+            "total_latency_seconds": 14.675898792999988,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1704,9 +1704,9 @@
                     "text": "Key Takeaways\nSampling is a statistical technique that involves performing a \npredetermined number of observations on a population.\nKnown sampling methods can be used to draw conclusions about \nan entire population from a representative sample.\nIn simple random sampling, every sample of a given size has an \nequal probability of being selected.\nNon-probability sampling involves selecting a sample based on the \nsubjective judgment of the investigator."
                 }
             ],
-            "generation_latency_seconds": 9.057657299999846,
-            "llm_evaluation_latency_seconds": 12.580843700001424,
-            "total_latency_seconds": 21.714360600002692,
+            "generation_latency_seconds": 5.86510368900008,
+            "llm_evaluation_latency_seconds": 8.646448725000027,
+            "total_latency_seconds": 14.621636175000049,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1778,9 +1778,9 @@
                     "text": "Simple Random Sampling: Example\nPopulation\nA\nB\nC\nSample of size 3\nEach sample 1/4\n3/4\nD\nA B C\nA B D\nA C D\nB C D\nEvery unit\nEach sample has a ¼ probability of being selected. Also, every unit has a ¾ probability of being selected.\nConsider a population consisting of four units: A, B, C, and D."
                 }
             ],
-            "generation_latency_seconds": 10.371526399998402,
-            "llm_evaluation_latency_seconds": 13.579180000000633,
-            "total_latency_seconds": 24.07332260000112,
+            "generation_latency_seconds": 6.842179403000046,
+            "llm_evaluation_latency_seconds": 8.719324905000121,
+            "total_latency_seconds": 15.671453037999981,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1852,9 +1852,9 @@
                     "text": "Stratified Random Sampling \nSample Population\nBetter representation\nIn comparison to a sample drawn at random, the chosen sample includes members of all strata, \nmaking it a more accurate representation of the population."
                 }
             ],
-            "generation_latency_seconds": 10.301397700000962,
-            "llm_evaluation_latency_seconds": 13.108380300000135,
-            "total_latency_seconds": 23.46155490000092,
+            "generation_latency_seconds": 6.051404475000027,
+            "llm_evaluation_latency_seconds": 8.756289391999871,
+            "total_latency_seconds": 14.886365124000122,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -1926,9 +1926,9 @@
                     "text": "Sampling\nSampling is the process of selecting a subset of a population to represent the entire population.\nIn statistics, sampling allows for the testing of a hypothesis about a population's characteristics."
                 }
             ],
-            "generation_latency_seconds": 8.955370600000606,
-            "llm_evaluation_latency_seconds": 12.026500200001465,
-            "total_latency_seconds": 21.04311299999972,
+            "generation_latency_seconds": 5.352733479000108,
+            "llm_evaluation_latency_seconds": 8.857299579000028,
+            "total_latency_seconds": 14.341244324999934,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -2000,9 +2000,9 @@
                     "text": "Approaches to Probability Sampling\nThere are four approaches to probability sampling: \nSimple random sampling Systematic sampling\nStratified random sampling Cluster sampling"
                 }
             ],
-            "generation_latency_seconds": 9.891762500003097,
-            "llm_evaluation_latency_seconds": 12.879221999995934,
-            "total_latency_seconds": 22.822724699995888,
+            "generation_latency_seconds": 5.9553039249997255,
+            "llm_evaluation_latency_seconds": 9.02943018399992,
+            "total_latency_seconds": 15.065595380000104,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -2074,9 +2074,9 @@
                     "text": "Discussion: Non-Probability Sampling\n• What is non-probability sampling?\nAnswer: It is an approach to sample selection wherein a sample is selected \nbased on the subjective judgment of the investigator. \n• What is convenience sampling?\nAnswer: It is an approach to sample selection in which sample units are \nchosen entirely on considerations of convenience.\nDuration: 15 minutes"
                 }
             ],
-            "generation_latency_seconds": 9.63000070000271,
-            "llm_evaluation_latency_seconds": 13.168033199995989,
-            "total_latency_seconds": 22.858363400002418,
+            "generation_latency_seconds": 6.883830927999952,
+            "llm_evaluation_latency_seconds": 8.952740936999817,
+            "total_latency_seconds": 15.941702931000236,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -2148,9 +2148,9 @@
                     "text": "Non-Probability Sampling Methods\nThe four methods of non-probability sampling are:\nConvenience sampling\nSnowball sampling\nVoluntary response sampling\nJudgmental or purposive sampling"
                 }
             ],
-            "generation_latency_seconds": 9.53434240000206,
-            "llm_evaluation_latency_seconds": 12.829586499996367,
-            "total_latency_seconds": 22.42952399999922,
+            "generation_latency_seconds": 6.572848566000175,
+            "llm_evaluation_latency_seconds": 8.562055450000116,
+            "total_latency_seconds": 15.240334913999959,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,
@@ -2222,9 +2222,9 @@
                     "text": "Key Takeaways\nThe four methods of non-probability sampling include convenience, \nvoluntary response, judgmental or purposeful, and snowball \nsampling.\nThe central limit theorem is applicable in situations involving other \ndistributions."
                 }
             ],
-            "generation_latency_seconds": 9.632301899997401,
-            "llm_evaluation_latency_seconds": 14.128232199997,
-            "total_latency_seconds": 23.846543899999233,
+            "generation_latency_seconds": 6.0660097009999845,
+            "llm_evaluation_latency_seconds": 8.793902079999953,
+            "total_latency_seconds": 15.02612284299994,
             "evaluation": {
                 "faithfulness": {
                     "score": 1.0,

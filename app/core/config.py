@@ -24,6 +24,11 @@ class Settings:
         "llama3.2:1b"
     )
 
+    JUDGE_MODEL = os.getenv(
+        "JUDGE_MODEL",
+        "qwen2.5:3b"
+    )
+
     EMBEDDING_MODEL = os.getenv(
         "EMBEDDING_MODEL",
         "sentence-transformers/all-MiniLM-L6-v2"
