@@ -164,6 +164,35 @@ Each dataset record includes the question, expected answer, source document, cat
 
 Evaluation results are stored in JSON and CSV formats under `app/evaluation/results/`.
 
+### Latest Evaluation Results
+
+The LLM-based evaluation pipeline was executed successfully using Docker.
+
+**Evaluation Summary**
+
+| Metric | Average Score |
+|---|---:|
+| Faithfulness | 91.67% |
+| Answer Relevancy | 86.67% |
+| Context Relevancy | 91.67% |
+| Answer Correctness | 96.67% |
+| Overall Score | 91.67% |
+
+**Execution Summary**
+
+| Metric | Result |
+|---|---:|
+| Total Questions | 30 |
+| Successful Executions | 30 |
+| Failed Executions | 0 |
+| Overall Pass Rate | 80% |
+
+**Execution Environment**
+- Docker-based execution
+- Generator: Ollama `llama3.2:1b`
+- Judge: Ollama `qwen2.5:3b`
+- Evaluation reports: JSON and CSV
+
 ## Technology Stack
 
 | Category | Technology |
